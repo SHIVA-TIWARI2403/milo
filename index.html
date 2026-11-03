@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://challenges.cloudflare.com https://accounts.google.com https://apis.google.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.googleusercontent.com https://lh3.googleusercontent.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com https://accounts.google.com; frame-src https://challenges.cloudflare.com https://accounts.google.com; base-uri 'self'; form-action 'self' https://accounts.google.com; object-src 'none'">
+<title>Milo — Meet people who like what you like</title>
+<meta name="description" content="Milo helps adults 18+ meet people who share their hobbies. Choose Friends or Dating mode, send requests and chat safely. Free to join.">
+<meta name="google-site-verification" content="Ew0HdffpLq7fEDpLZuEfhThRLEuFWNj_Yr4Jw-E7I7E" />
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0a0614">
+<link rel="canonical" href="https://milosathi.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Milo">
+<meta property="og:title" content="Milo — Meet people who like what you like">
+<meta property="og:description" content="Pick your hobbies, choose Friends or Dating mode, and meet adults who share them. Free, 18+ only.">
+<meta property="og:url" content="https://milosathi.netlify.app/">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Milo — Meet people who like what you like">
+<meta name="twitter:description" content="Meet adults 18+ who share your hobbies. Friends or Dating mode. Free.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Milo","url":"https://milosathi.netlify.app/","description":"A free website where adults 18+ meet people who share their hobbies.","inLanguage":"en-IN"},{"@type":"Organization","name":"Milo","url":"https://milosathi.netlify.app/","founder":{"@type":"Person","name":"Shiva Tiwari"},"address":{"@type":"PostalAddress","addressLocality":"Ayodhya","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","email":"amshivatiwari444@gmail.com","contactType":"customer support"}}]}</script>
+<style>
+:root{--display:'Segoe UI',system-ui,sans-serif;--body:'Segoe UI',system-ui,sans-serif;--ink:#f6f2ff;--mut:#cfc8e4;--em:#ff8a5c;--or:#b79cff;--mint:#62e6bd}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;min-height:100vh;background:#0a0614;color:var(--ink);font:16px/1.6 var(--body)}
+body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(45vw 45vw at 12% 8%,#ff8a5c66,transparent 70%),radial-gradient(50vw 50vw at 90% 20%,#8b6cff77,transparent 70%),radial-gradient(45vw 45vw at 50% 105%,#2fd3a755,transparent 70%)}
+button,input,select{font:inherit;color:inherit}button{cursor:pointer;border:0}a{color:inherit}
+:focus-visible{outline:2px solid var(--em);outline-offset:3px}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+.glass{background:rgba(255,255,255,.08);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(255,255,255,.16);border-radius:24px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.nav{position:sticky;top:12px;z-index:20;margin:12px auto;max-width:1100px;width:calc(100% - 24px);padding:10px 18px;display:flex;align-items:center;gap:18px;justify-content:space-between;border-radius:999px}
+.brand{font:800 26px var(--display);letter-spacing:-1px;text-decoration:none}
+.nav nav{display:flex;gap:22px;color:var(--mut)}.nav nav a{text-decoration:none}.nav nav a:hover{color:var(--ink)}
+.right{display:flex;align-items:center;gap:8px}
+.btn{padding:10px 18px;border-radius:999px;font-weight:700;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.btn.main{background:var(--em);border-color:var(--em);color:#1a0e08}
+select{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 10px}option{color:#111}
+html{scroll-behavior:smooth;scroll-padding-top:92px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.hero{padding:96px 44px 80px;margin:28px 0;min-height:78vh;display:flex;flex-direction:column;justify-content:center}
+.hero h1{font:800 clamp(38px,6vw,72px)/1 var(--display);letter-spacing:-.04em;margin:0 0 18px;max-width:12em}
+.hero p{color:var(--mut);font-size:18px;max-width:34em;margin:0 0 30px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.mode{text-align:left;padding:24px;display:grid;gap:6px;transition:transform .15s,border-color .15s}
+.mode:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.4)}
+.mode b{font:800 28px var(--display);letter-spacing:-.02em}.mode span{color:var(--mut)}
+#people{padding:28px;margin:28px 0}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.tabs{display:flex;gap:6px;background:rgba(0,0,0,.25);padding:5px;border-radius:999px}
+.tabs button{background:none;padding:9px 20px;border-radius:999px;font-weight:700;color:var(--mut)}
+.tabs button.on{background:var(--ink);color:#1a1030}
+#q{flex:1;min-width:200px;padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.25)}
+#hint{color:var(--mut);font-size:14px;margin:0 0 14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.pc{padding:20px;display:flex;flex-direction:column;gap:10px;border-radius:20px}
+.pc h3{font:700 22px var(--display);margin:0}.pc small{color:var(--mut)}
+.tg{display:flex;flex-wrap:wrap;gap:6px}.t{font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.2);color:var(--mut)}
+.t.hit{background:#ff8a5c33;border-color:var(--em);color:#ffc2a8}
+.m{color:var(--mint);font-size:14px;font-weight:600}.pc .btn{margin-top:auto}
+.empty{grid-column:1/-1;text-align:center;color:var(--mut);padding:30px;border:1px dashed rgba(255,255,255,.25);border-radius:20px}
+footer{padding:40px 0 60px}footer h2{font:800 34px var(--display);letter-spacing:-.03em;margin:0 0 18px}
+details{padding:0 22px;margin-bottom:10px;border-radius:18px}summary{padding:16px 0;font-weight:700;cursor:pointer}
+details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut);font-size:14px}
+.bg{position:fixed;inset:0;background:#05020ccc;display:none;place-items:center;padding:16px;z-index:40}.bg.show{display:grid}
+.modal{width:min(480px,100%);max-height:92vh;overflow:auto;padding:28px;background:rgba(30,22,48,.82)}
+.modal h2{font:800 26px var(--display);margin:0 0 4px}.modal p{margin:0;color:var(--mut);font-size:14px}
+.x{float:right;background:none;font-size:26px;color:var(--mut)}
+.f{display:grid;gap:5px;margin:12px 0}.f label{font-size:13px;font-weight:600;color:var(--mut)}
+.f input,.f select{width:100%;border-radius:12px;padding:12px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.2)}
+.picks{display:flex;flex-wrap:wrap;gap:7px}.pk{position:relative}
+.pk input{position:absolute;inset:0;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
+.pk span{display:inline-block;padding:7px 13px;border:1px solid rgba(255,255,255,.22);border-radius:999px;font-size:14px;font-weight:600;color:var(--mut)}
+.pk input:checked+span{background:var(--em);border-color:var(--em);color:#1a0e08}.pk input:focus-visible+span{outline:2px solid var(--or)}
+.ph{display:flex;justify-content:space-between;font-size:13px;font-weight:600;color:var(--mut);margin:16px 0 8px}
+.lnk{background:none;color:var(--or);padding:6px 0;font-size:14px;text-decoration:underline}
+.msgs{height:300px;overflow:auto;display:flex;flex-direction:column;gap:6px;margin:12px 0;padding:6px}.msg{max-width:80%;padding:8px 13px;border-radius:14px;background:rgba(255,255,255,.12);align-self:flex-start;overflow-wrap:anywhere}.msg.me{align-self:flex-end;background:var(--em);color:#1a0e08}.sendf{display:flex;gap:8px}.sendf input{flex:1;padding:12px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.3)}.chh{display:flex;justify-content:space-between;align-items:center;gap:8px}.rw2{display:flex;gap:8px;align-items:center;justify-content:space-between;width:100%;margin:6px 0;text-align:left}#inList h3{margin:16px 0 4px;font-size:16px}
+.fbf{padding:30px;display:grid;gap:10px;max-width:560px}.fbf label{font-size:14px;color:var(--mut);font-weight:600}.fbf select,.fbf textarea{width:100%;padding:12px;border-radius:12px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.2);font:inherit}
+#botFab{position:fixed;right:16px;bottom:16px;z-index:30;padding:12px 20px;box-shadow:0 6px 24px rgba(0,0,0,.4)}
+#botPanel{position:fixed;right:16px;bottom:72px;width:min(380px,calc(100vw - 32px));z-index:31;padding:14px;display:flex;flex-direction:column;gap:8px}
+.bt{display:flex;gap:6px;align-items:center}.bt button:not(.x){background:rgba(255,255,255,.08);padding:7px 12px;border-radius:999px;font-weight:700;color:var(--mut);border:1px solid rgba(255,255,255,.15)}.bt button.on{background:var(--ink);color:#1a1030}.bt .x{margin-left:auto;float:none}
+.bl{height:260px;overflow:auto;display:flex;flex-direction:column;gap:6px}.bm{max-width:85%;padding:8px 12px;border-radius:14px;background:rgba(255,255,255,.12);align-self:flex-start;overflow-wrap:anywhere}.bm.u{align-self:flex-end;background:var(--em);color:#1a0e08}
+.bf{display:flex;gap:8px}.bf input{flex:1;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.3)}.bn{margin:0;font-size:12px;color:var(--mut)}
+#ck{position:fixed;left:12px;right:12px;bottom:12px;max-width:640px;margin:auto;z-index:45;padding:14px 18px;display:flex;gap:14px;align-items:center;justify-content:space-between;font-size:14px;border-radius:18px}#ck a{color:#ffc2a8}.copy a{color:var(--ink)}
+.sec{margin:110px 0}.sec h2{font:800 clamp(30px,4.4vw,48px)/1.05 var(--display);letter-spacing:-.03em;margin:0 0 10px}.sub{color:var(--mut);font-size:18px;margin:0 0 32px;max-width:36em}
+.grid4,.grid3{display:grid;gap:16px}.grid4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}.grid3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.c{padding:26px}.c h3{font:700 22px var(--display);margin:12px 0 6px}.c p{margin:0;color:var(--mut)}
+.n{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--em);color:#1a0e08;font-weight:800}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pn{padding:34px}.pn h3{font:800 30px var(--display);margin:0 0 10px}.pn ul{padding-left:20px;color:var(--mut);margin:0}.pn li{margin:6px 0}
+.road{display:grid;gap:10px}.rw{display:flex;justify-content:space-between;gap:14px;padding:16px 22px;align-items:center}
+.tag{font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.3);white-space:nowrap}.tag.l{color:var(--mint);border-color:var(--mint)}
+.band{padding:64px 32px;text-align:center}.band h2{margin:0 0 20px}
+@media(max-width:760px){.split{grid-template-columns:1fr}.sec{margin:80px 0}}
+#toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:#15111d;padding:12px 20px;border-radius:14px;z-index:50;transition:.25s;font-weight:600;max-width:90vw}#toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:760px){.nav nav,#userBox{display:none}.hero{padding:34px 22px}.modes{grid-template-columns:1fr}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script></head>
+<body>
+<header class="nav glass"><a class="brand" href="#">milo</a>
+<nav><a href="#people" onclick="showPeople('Friends');return false">Friends</a><a href="#people" onclick="showPeople('Dating');return false">Dating</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
+<div class="right"><select id="fontSel" aria-label="Choose font" onchange="setFont(this.value)"></select><span id="userBox" hidden></span>
+<button id="inboxBtn" class="btn" hidden onclick="openInbox()">Chats</button><button id="profBtn" class="btn" hidden onclick="openProf()">My profile</button><button id="logoutBtn" class="btn" hidden onclick="sb.auth.signOut().then(()=>toast('Logged out.'))">Log out</button>
+<button id="loginBtn" class="btn" onclick="openAuth('login')">Log in</button><button id="joinBtn" class="btn main" onclick="openAuth('signup')">Join</button></div></header>
+
+<main class="wrap">
+<section class="hero glass"><h1>Meet people who like what you like.</h1>
+<p>Pick your hobbies, choose a mode, and see people who share them. Adults 18+ only.</p>
+<div class="modes"><button class="mode glass" onclick="showPeople('Friends')"><b>Friends mode</b><span>Find people nearby who share your hobbies.</span></button>
+<button class="mode glass" onclick="showPeople('Dating')"><b>Dating mode</b><span>Find adults looking for a match.</span></button></div></section>
+
+<section class="sec" id="how"><h2>How Milo works</h2><p class="sub">Four simple steps from signup to your first match.</p>
+<div class="grid4"><article class="glass c"><span class="n">1</span><h3>Join</h3><p>Sign up with Google or Email. Milo checks that you are 18 or older.</p></article>
+<article class="glass c"><span class="n">2</span><h3>Pick a mode</h3><p>Choose Friends, Dating or both, and tell us your hobbies and vibe.</p></article>
+<article class="glass c"><span class="n">3</span><h3>See your people</h3><p>Milo lists people who share your hobbies, same city first. Search by name or username.</p></article>
+<article class="glass c"><span class="n">4</span><h3>Stay in control</h3><p>Edit your profile any time, or delete your account in one click.</p></article></div></section>
+
+<section class="sec" id="why"><h2>Why people like Milo</h2><p class="sub">Built around what you enjoy, not around endless swiping.</p>
+<div class="grid3"><article class="glass c"><h3>Interests first</h3><p>Shared hobbies give you something to talk about from the very first message.</p></article>
+<article class="glass c"><h3>Two clear modes</h3><p>Friends and Dating are separate, so you only see people looking for the same thing.</p></article>
+<article class="glass c"><h3>Privacy by design</h3><p>Others see only your name, username, city, hobbies and vibe. Never your email or date of birth.</p></article></div></section>
+
+<section class="sec" id="modes"><h2>Friends or Dating</h2><p class="sub">Use one mode or both. You can change this later in My profile.</p>
+<div class="split"><article class="glass pn"><h3>Friends mode</h3><ul><li>Meet people nearby with the same hobbies</li><li>Find a gym, cricket or study buddy</li><li>Open to every adult 18+</li></ul></article>
+<article class="glass pn"><h3>Dating mode</h3><ul><li>Discover adults looking for a match</li><li>Shared interests shown on every profile</li><li>Strictly 18 and over</li></ul></article></div></section>
+
+<section class="sec" id="safety"><h2>Stay safe on Milo</h2><p class="sub">Simple habits that protect you on any online platform.</p>
+<div class="grid3"><article class="glass c"><h3>Guard your secrets</h3><p>Never share your password, OTP or money with anyone, even someone you like.</p></article>
+<article class="glass c"><h3>Meet in public</h3><p>Choose a busy public place for the first meeting and tell a friend where you are going.</p></article>
+<article class="glass c"><h3>Trust your instincts</h3><p>If something feels wrong, stop talking. Block and report are available in every chat.</p></article></div></section>
+
+<section class="sec" id="soon"><h2>What is live and what is next</h2><p class="sub">We build step by step and tell you honestly where we are.</p>
+<div class="road"><div class="glass rw"><span>Signup, Google &amp; email login, 18+ verification</span><span class="tag l">Live</span></div>
+<div class="glass rw"><span>Hobby-based suggestions and search</span><span class="tag l">Live</span></div>
+<div class="glass rw"><span>Delete my account</span><span class="tag l">Live</span></div>
+<div class="glass rw"><span>Friend requests</span><span class="tag l">Live</span></div>
+<div class="glass rw"><span>Chat after a request is accepted</span><span class="tag l">Live</span></div>
+<div class="glass rw"><span>Block, report and admin security</span><span class="tag l">Live</span></div></div></section>
+
+<section class="sec" id="invite"><h2>Invite your friends</h2><p class="sub">Milo is better with people you know. Share your link, no pressure.</p>
+<div class="glass c" style="padding:30px"><p id="refLine" style="margin:0 0 16px;overflow-wrap:anywhere"></p>
+<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn main" onclick="shareMilo()">Share</button><button class="btn" onclick="waMilo()">WhatsApp</button><button class="btn" onclick="copyMilo()">Copy link</button></div>
+<p id="refCount" style="margin:16px 0 0;color:var(--mut)"></p></div></section>
+
+<section class="sec" id="feedback"><h2>Help us improve Milo</h2><p class="sub">Tell us what works and what does not. Your message goes straight to the Milo team.</p>
+<form class="glass c fbf" onsubmit="sendFb(event)"><label for="fbR">Rating</label><select id="fbR" required><option value="">Choose 1 to 5</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select>
+<label for="fbM">Your message</label><textarea id="fbM" required minlength="3" maxlength="1000" rows="4"></textarea><button class="btn main">Send feedback</button></form></section>
+
+<section class="sec"><div class="glass band"><h2>Ready to meet people who get you?</h2><button class="btn main" style="padding:14px 28px;font-size:17px" onclick="me?openProf():openAuth('signup')">Create your profile</button></div></section>
+
+<section id="people" class="glass" hidden>
+<div class="bar"><div class="tabs"><button id="tabF" onclick="showPeople('Friends')">Friends</button><button id="tabD" onclick="showPeople('Dating')">Dating</button></div>
+<input id="q" type="search" placeholder="Search by name or username" aria-label="Search people" oninput="clearTimeout(st);st=setTimeout(load,300)"></div>
+<p id="hint" hidden>Add hobbies and a username in My profile for better suggestions.</p>
+<div id="cards" class="cards"></div></section></main>
+
+<footer class="wrap" id="faq"><h2>Questions? We have answers.</h2>
+<details class="glass"><summary>Milo kyu use karein?</summary><p>Yahan aap profile ke saath hobbies chunte ho, aur Milo wahi log dikhata hai jinke interests aapse milte hain. Isse pehli baat-cheet ke liye topic mil jata hai.</p></details>
+<details class="glass"><summary>Isse kya fayda hoga?</summary><p>Same hobbies wale log upar dikhte hain, same city wale pehle. Friends aur Dating alag modes hain, to aap sirf wahi dekhte ho jo chahiye.</p></details>
+<details class="glass"><summary>Kya koi problem ya risk aa sakta hai?</summary><p>Kisi bhi online site par fake profile ya scam ka risk hota hai. Kabhi OTP, password ya paise kisi ko mat do, aur pehli baar public jagah par milo. Block/report feature har chat mein hai, aur admin reporting system se suspicious accounts ban kiye jate hain.</p></details>
+<details class="glass"><summary>Kya Milo free hai?</summary><p>Haan, abhi signup, profile aur suggestions free hain. Milo mein paid plans nahi hain. Aage chalke site ka kharcha ads se chalega.</p></details>
+<details class="glass"><summary>Mera data aur password safe hai?</summary><p>Password hum nahi dekh sakte, wo Supabase mein encrypted rehta hai. Aapki date of birth aur email dusre users ko nahi dikhte; sirf naam, username, city aur hobbies dikhte hain.</p></details>
+<details class="glass"><summary>Kaun join kar sakta hai?</summary><p>Sirf 18+ log. Age signup ke time database mein check hoti hai.</p></details>
+<details class="glass"><summary>Kya yahan chat hai?</summary><p>Haan. Kisi ko request bhejo, accept hone par chat khulti hai. Block aur report har chat mein hai. Calls aur paid plans Milo mein nahi honge.</p></details>
+<div class="copy"><b>Milo</b> · Operated by Shiva Tiwari, Ayodhya, India · WhatsApp +91 8960056517 · <a href="mailto:amshivatiwari444@gmail.com">amshivatiwari444@gmail.com</a><br><a href="legal.html#privacy">Privacy Policy</a> · <a href="legal.html#terms">Terms</a> · <a href="legal.html#cookies">Cookies</a> · © 2026 Milo</div></footer>
+
+<!-- AUTH MODAL -->
+<div id="authBg" class="bg" onclick="if(event.target===this)closeAuth()"><div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="aTitle">
+<button class="x" onclick="closeAuth()" aria-label="Close">×</button><h2 id="aTitle"></h2><p id="aSub"></p>
+<div id="oauthBox">
+<button type="button" class="btn" id="googleBtn" style="width:100%;display:flex;align-items:center;justify-content:center;gap:10px;padding:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);margin:14px 0 10px" onclick="signInWithGoogle()"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.6l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.4 9 5 12 5z"/><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.7-.2-2.3H12v4.6h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.9z"/><path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3s.2-1.6.4-2.3L1.9 7.3C.7 9.7 0 12.3 0 15.2s.7 5.5 1.9 7.9l3.7-2.9z"/><path fill="#34A853" d="M12 23.5c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2-6.4-4.8L1.9 16.9C3.7 20.6 7.5 23.5 12 23.5z"/></svg> Continue with Google</button>
+<div id="authDivider" style="display:flex;align-items:center;margin:12px 0;gap:10px;color:var(--mut);font-size:12px"><hr style="flex:1;border:0;border-top:1px solid rgba(255,255,255,.15)"><span>OR CONTINUE WITH EMAIL</span><hr style="flex:1;border:0;border-top:1px solid rgba(255,255,255,.15)"></div>
+</div>
+<form onsubmit="submitAuth(event)">
+<div class="f" id="fEmail"><label for="email">Email</label><input id="email" type="email" autocomplete="email"></div>
+<div class="f" id="fPass"><label for="password">Password</label><input id="password" type="password" minlength="8" placeholder="At least 8 characters"></div>
+<div class="f" id="fPass2"><label for="password2">Confirm password</label><input id="password2" type="password" minlength="8"></div>
+<div id="profileFields">
+<div class="f"><label for="name">Name</label><input id="name" maxlength="60"></div>
+<div class="f"><label for="dob">Date of birth</label><input id="dob" type="date"></div>
+<div class="f"><label for="city">City</label><input id="city" maxlength="80"></div>
+<div class="f"><label for="gender">Gender (optional)</label><select id="gender"><option value="">Choose one</option><option>Woman</option><option>Man</option><option>Non-binary</option><option>Prefer not to say</option></select></div>
+<div class="f"><label for="looking">Looking for</label><select id="looking"><option value="">Choose a mode</option><option>Friends</option><option>Dating</option><option>Both</option></select></div></div>
+<div id="termsRow" style="display:grid;gap:8px;font-size:13px;color:var(--mut)"><label><input id="age18" type="checkbox"> I confirm I am 18 or older.</label><label><input id="terms" type="checkbox"> I have read the <a href="legal.html#privacy" target="_blank">Privacy Policy</a> and agree to the <a href="legal.html#terms" target="_blank">Terms</a>.</label></div>
+<div id="cap"></div>
+<button class="btn main" id="aBtn" style="width:100%;margin-top:16px;padding:14px"></button>
+<button type="button" class="lnk" id="forgot" onclick="openAuth('reset')">Forgot password?</button></form></div></div>
+
+<!-- GOOGLE OAUTH ONBOARDING MODAL -->
+<div id="obBg" class="bg"><div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="obT">
+<h2 id="obT">Complete your profile</h2><p>Milo is strictly for adults 18+. Confirm your details to continue.</p>
+<form onsubmit="submitOb(event)">
+<div class="f"><label for="obName">Your name</label><input id="obName" maxlength="60" required></div>
+<div class="f"><label for="obDob">Date of birth</label><input id="obDob" type="date" required></div>
+<div class="f"><label for="obCity">City</label><input id="obCity" maxlength="80" required></div>
+<div class="f"><label for="obGender">Gender (optional)</label><select id="obGender"><option value="">Choose one</option><option>Woman</option><option>Man</option><option>Non-binary</option><option>Prefer not to say</option></select></div>
+<div class="f"><label for="obLooking">Looking for</label><select id="obLooking" required><option value="">Choose a mode</option><option>Friends</option><option>Dating</option><option>Both</option></select></div>
+<div style="display:grid;gap:8px;font-size:13px;color:var(--mut);margin:12px 0"><label><input id="obAge18" type="checkbox" required> I confirm I am 18 or older.</label><label><input id="obTerms" type="checkbox" required> I have read the <a href="legal.html#privacy" target="_blank">Privacy Policy</a> and agree to the <a href="legal.html#terms" target="_blank">Terms</a>.</label></div>
+<button class="btn main" id="obBtn" style="width:100%;margin-top:10px;padding:14px">Save &amp; Enter Milo</button>
+</form></div></div>
+
+<!-- PROFILE MODAL -->
+<div id="profBg" class="bg" onclick="if(event.target===this)closeProf()"><div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="pT">
+<button class="x" onclick="closeProf()" aria-label="Close">×</button><h2 id="pT">My profile</h2><p>Used to suggest people to you.</p>
+<div class="f"><label for="uname">Username (3-20 letters, numbers, _)</label><input id="uname" maxlength="20"></div>
+<div class="f"><label for="mymode">I am here for</label><select id="mymode"><option>Friends</option><option>Dating</option><option>Both</option></select></div>
+<div class="ph"><span>Hobbies</span><span id="hc"></span></div><div class="picks" id="hobbyPicks"></div>
+<div class="ph"><span>Your vibe</span><span id="vc"></span></div><div class="picks" id="vibePicks"></div>
+<button class="btn main" id="sBtn" style="width:100%;margin-top:20px;padding:14px" onclick="saveProf()">Save profile</button><button class="lnk" style="color:#ffb3b3;margin-top:10px" onclick="delAcc()">Delete my account</button></div></div>
+
+<!-- INBOX MODAL -->
+<div id="inBg" class="bg" onclick="if(event.target===this)closeInbox()"><div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="inT"><button class="x" onclick="closeInbox()" aria-label="Close">×</button><h2 id="inT">Requests and chats</h2>
+<div id="inList"></div>
+<div id="chatView" hidden><div class="chh"><button class="btn" onclick="renderInbox()">← Back</button><b id="chTitle"></b><span><button class="lnk" onclick="blockU(chatReq.other_id)">Block</button> <button class="lnk" onclick="reportU(chatReq.other_id)">Report</button></span></div>
+<div id="msgs" class="msgs" aria-live="polite"></div>
+<form class="sendf" onsubmit="sendMsg(event)"><input id="msgIn" maxlength="1000" placeholder="Type a message" aria-label="Message" autocomplete="off"><button class="btn main">Send</button></form></div></div></div>
+
+<!-- BOTS & HELP -->
+<button id="botFab" class="btn main" onclick="botToggle()" aria-expanded="false" aria-controls="botPanel">Help &amp; bots</button>
+<div id="botPanel" class="glass" role="dialog" aria-label="Help and chat bots" hidden>
+<div class="bt"><button id="t0" class="on" onclick="botSel('Milo Help')">Help</button><button id="t1" onclick="botSel('Aarav')">Aarav <span class="tag" style="font-size:9px;padding:1px 5px">BOT</span></button><button id="t2" onclick="botSel('Anaya')">Anaya <span class="tag" style="font-size:9px;padding:1px 5px">BOT</span></button><button class="x" onclick="botToggle()" aria-label="Close">×</button></div>
+<div id="bl" class="bl" aria-live="polite"></div>
+<form class="bf" onsubmit="botSend(event)"><input id="bi" maxlength="300" placeholder="Type a message" aria-label="Message to bot" autocomplete="off"><button class="btn main">Send</button></form>
+<p class="bn">Bots are automated. They cannot see accounts, passwords or other people’s data.</p></div>
+
+<div id="ck" class="glass" role="dialog" aria-label="Cookie notice" hidden><span>Milo uses only essential storage (login, font choice and invite code). No ads or tracking. <a href="legal.html#cookies">Cookies Policy</a></span><button class="btn main" onclick="ckOk()">OK</button></div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* Sirf publishable key yahan rakhni hai. service_role / secret key KABHI nahi. */
+const SUPABASE_URL='https://aljlnisvrveuwlishgyv.supabase.co',SUPABASE_ANON_KEY='sb_publishable_fHpR8DkYG6XGbnUs8djC0g_gyQn0Kwm';
+const ok=!SUPABASE_URL.startsWith('PASTE'),sb=ok?window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY):null;
+const $=id=>document.getElementById(id),el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!==undefined)e.textContent=x;return e};
+let tt,st,me=null,mode='Friends',am='signup',myId=null,conns=[],blocked=new Set(),chatReq=null,chan=null;
+const toast=m=>{const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),4500)};
+const HOBBIES=['Cricket','Football','Badminton','Gym & fitness','Yoga','Trekking','Music','Singing','Dancing','Movies & series','Anime','Gaming','Reading','Writing','Art & drawing','Photography','Coding','Travel','Cooking','Chai & street food'];
+const VIBES=['Calm','Funny','Adventurous','Bookworm','Creative','Ambitious','Homebody','Social butterfly'];
+const FONTS={'Sans-serif':['Segoe UI','Segoe UI','sans-serif'],Serif:['Georgia','Georgia','serif'],Monospace:['Consolas','Consolas','monospace']};
+function setFont(k){const f=FONTS[k]||FONTS['Sans-serif'],r=document.documentElement.style;r.setProperty('--display',`'${f[0]}',${f[2]}`);r.setProperty('--body',`'${f[1]}',${f[2]}`);try{localStorage.setItem('milo_font',k)}catch(e){}}
+Object.keys(FONTS).forEach(k=>$('fontSel').append(new Option(k,k)));
+try{const k=localStorage.getItem('milo_font');if(k&&FONTS[k]){$('fontSel').value=k;setFont(k)}}catch(e){}
+
+const AM={login:{t:'Log in',s:'Welcome back.',f:['fEmail','fPass'],b:'Log in'},signup:{t:'Join Milo',s:'Create your account. Adults 18+ only.',f:['fEmail','fPass','fPass2','profileFields','termsRow'],b:'Create account'},reset:{t:'Reset password',s:'We will email you a reset link.',f:['fEmail'],b:'Send reset link'},newpass:{t:'Set a new password',s:'Choose a new password.',f:['fPass','fPass2'],b:'Save password'}};
+const AF=['fEmail','fPass','fPass2','profileFields','termsRow'],PI=['name','dob','city','looking'];
+
+function openAuth(m){
+  am=m;const c=AM[m],h=i=>c.f.includes(i);
+  $('aTitle').textContent=c.t;$('aSub').textContent=c.s;
+  AF.forEach(i=>$(i).hidden=!h(i));
+  $('oauthBox').hidden=(m==='reset'||m==='newpass');
+  $('email').required=h('fEmail');$('password').required=h('fPass');$('password2').required=h('fPass2');
+  PI.forEach(i=>$(i).required=m==='signup');$('terms').required=$('age18').required=m==='signup';
+  $('aBtn').textContent=c.b;$('forgot').hidden=m!=='login';
+  $('password').autocomplete=m==='login'?'current-password':'new-password';
+  $('authBg').classList.add('show');capInit();
+  setTimeout(()=>$(h('fEmail')?'email':'password').focus(),50);
+}
+const closeAuth=()=>$('authBg').classList.remove('show');
+$('dob').max=new Date().toISOString().slice(0,10);
+function age(v){const d=new Date(v+'T00:00:00'),t=new Date();let a=t.getFullYear()-d.getFullYear(),m=t.getMonth()-d.getMonth();if(m<0||(m===0&&t.getDate()<d.getDate()))a--;return a}
+
+async function signInWithGoogle(){
+  if(!ok)return toast('Pehle Supabase URL aur key paste karo.');
+  try{
+    const{error}=await sb.auth.signInWithOAuth({
+      provider:'google',
+      options:{
+        redirectTo:location.origin+location.pathname
+      }
+    });
+    if(error)toast('Google login error: '+error.message);
+  }catch(e){toast('Error: '+e.message)}
+}
+
+function openOb(data,user){
+  $('obDob').max=new Date().toISOString().slice(0,10);
+  $('obName').value=data?.name||user?.user_metadata?.full_name||user?.user_metadata?.name||'';
+  $('obCity').value=data?.city||'';
+  $('obGender').value=data?.gender||'';
+  $('obLooking').value=data?.looking_for||'Friends';
+  $('obBg').classList.add('show');
+}
+
+async function submitOb(e){
+  e.preventDefault();
+  const dob=$('obDob').value;
+  if(age(dob)<18)return toast('Milo is for adults 18+ only.');
+  $('obBtn').disabled=true;
+  try{
+    const{error}=await sb.rpc('complete_oauth_profile',{
+      p_name:$('obName').value.trim(),
+      p_dob:dob,
+      p_city:$('obCity').value.trim(),
+      p_gender:$('obGender').value||'Prefer not to say',
+      p_looking_for:$('obLooking').value
+    });
+    if(error)return toast('Could not save: '+error.message);
+    $('obBg').classList.remove('show');
+    toast('Profile completed! Welcome to Milo.');
+    refresh();
+  }catch(x){toast('Error: '+x.message)}finally{$('obBtn').disabled=false}
+}
+
+async function submitAuth(e){
+  e.preventDefault();if(!ok)return toast('Pehle Supabase URL aur key paste karo.');
+  const email=$('email').value.trim(),pw=$('password').value;
+  if((am==='signup'||am==='newpass')&&pw!==$('password2').value)return toast('Passwords do not match.');
+  if(TURNSTILE_KEY&&!capTok&&am!=='newpass')return toast('Please complete the human check.');
+  $('aBtn').disabled=true;
+  try{
+    if(am==='login'){const{error}=await sb.auth.signInWithPassword({email,password:pw,options:{captchaToken:capTok||undefined}});if(error)return toast('Login failed: '+error.message);closeAuth();toast('Logged in.')}
+    else if(am==='reset'){const{error}=await sb.auth.resetPasswordForEmail(email,{redirectTo:location.origin+location.pathname,captchaToken:capTok||undefined});if(error)return toast(error.message);closeAuth();toast('If this email has an account, a reset link is on its way.')}
+    else if(am==='newpass'){const{error}=await sb.auth.updateUser({password:pw});if(error)return toast(error.message);closeAuth();toast('Password updated.')}
+    else{const dob=$('dob').value;if(age(dob)<18)return toast('Milo is for adults 18+ only.');
+    const{data,error}=await sb.auth.signUp({email,password:pw,options:{captchaToken:capTok||undefined,data:{name:$('name').value.trim(),dob,city:$('city').value.trim(),gender:$('gender').value||'Prefer not to say',looking_for:$('looking').value,ref:(()=>{try{return localStorage.getItem('milo_ref')||''}catch(e){return''}})()}}});
+    if(error)return toast('Signup failed: '+error.message);closeAuth();toast(data.session?'Account created.':'Account created. Confirm your email, then log in.')}
+  }catch(x){toast('Error: '+x.message)}finally{$('aBtn').disabled=false;if(window.turnstile&&TURNSTILE_KEY){turnstile.reset();capTok=null}}
+}
+
+function picks(id,list,sel,max,cid){const b=$(id);b.replaceChildren();const u=()=>$(cid).textContent=b.querySelectorAll('input:checked').length+' / '+max;
+list.forEach(v=>{const l=el('label','pk'),i=document.createElement('input');i.type='checkbox';i.value=v;i.checked=sel.includes(v);
+i.onchange=()=>{if(b.querySelectorAll('input:checked').length>max){i.checked=false;toast('Pick up to '+max+'.')}u()};l.append(i,el('span','',v));b.append(l)});u()}
+
+function openProf(){$('uname').value=me?.username||'';$('mymode').value=me?.looking_for||'Friends';picks('hobbyPicks',HOBBIES,me?.hobbies||[],10,'hc');picks('vibePicks',VIBES,me?.vibes||[],3,'vc');$('profBg').classList.add('show')}
+const closeProf=()=>$('profBg').classList.remove('show');
+
+async function saveProf(){const pk=id=>[...$(id).querySelectorAll('input:checked')].map(i=>i.value),un=$('uname').value.trim().toLowerCase();
+if(un&&!/^[a-z0-9_]{3,20}$/.test(un))return toast('Username: 3-20 letters, numbers or _ only.');
+const u={looking_for:$('mymode').value,hobbies:pk('hobbyPicks'),vibes:pk('vibePicks')};if(un)u.username=un;
+$('sBtn').disabled=true;try{const{data:{session}}=await sb.auth.getSession();const{error}=await sb.from('profiles').update(u).eq('id',session.user.id);
+if(error)return toast(error.code==='23505'?'That username is taken.':'Could not save: '+error.message);
+me={...me,...u};closeProf();toast('Profile saved.');setTabs();load()}finally{$('sBtn').disabled=false}}
+
+async function loadConns(){const[a,b]=await Promise.all([sb.rpc('get_connections'),sb.from('blocks').select('blocked_id')]);conns=a.data||[];blocked=new Set((b.data||[]).map(x=>x.blocked_id))}
+function actBtn(p){const c=conns.find(x=>x.other_id===p.id),b=el('button','btn');
+if(!c){b.textContent='Send request';b.className='btn main';b.onclick=()=>send(p.id)}
+else if(c.status==='accepted'){b.textContent='Open chat';b.onclick=()=>{openInbox().then(()=>openChat(c))}}
+else if(c.status==='pending'&&c.incoming){b.textContent='Accept request';b.onclick=()=>respond(c.id,true)}
+else{b.textContent=c.status==='pending'?'Request sent':'Declined';b.disabled=true}return b}
+
+async function send(id){const{error}=await sb.rpc('send_request',{p_to:id,p_mode:mode});if(error)return toast(error.code==='23505'?'A request with this person already exists.':error.message);toast('Request sent.');load()}
+async function respond(id,ok){const{error}=await sb.rpc('respond_request',{p_id:id,p_accept:ok});if(error)return toast(error.message);toast(ok?'Accepted. You can chat now.':'Request declined.');await load();if($('inBg').classList.contains('show'))renderInbox()}
+
+async function openInbox(){await loadConns();renderInbox();$('inBg').classList.add('show')}
+function closeInbox(){$('inBg').classList.remove('show');leaveChat()}
+function renderInbox(){leaveChat();const b=$('inList');b.replaceChildren();const inc=conns.filter(c=>c.status==='pending'&&c.incoming),ch=conns.filter(c=>c.status==='accepted');
+b.append(el('h3','','Requests'));if(!inc.length)b.append(el('p','','No new requests.'));
+inc.forEach(c=>{const r=el('div','rw2');r.append(el('span','',c.name+' ('+c.mode+')'));const a=el('button','btn main','Accept');a.onclick=()=>respond(c.id,true);const d=el('button','btn','Decline');d.onclick=()=>respond(c.id,false);r.append(a,d);b.append(r)});
+b.append(el('h3','','Chats'));if(!ch.length)b.append(el('p','','No chats yet. Accepted requests appear here.'));
+ch.forEach(c=>{const r=el('button','btn rw2',c.name+' · '+c.city);r.onclick=()=>openChat(c);b.append(r)})}
+
+async function openChat(c){chatReq=c;$('inList').hidden=true;$('chatView').hidden=false;$('chTitle').textContent=c.name;const m=$('msgs');m.replaceChildren();
+const{data,error}=await sb.from('messages').select('id,sender_id,body').eq('request_id',c.id).order('created_at').limit(200);if(error)return toast(error.message);(data||[]).forEach(addMsg);
+if(chan)sb.removeChannel(chan);chan=sb.channel('chat-'+c.id).on('postgres_changes',{event:'INSERT',schema:'public',table:'messages',filter:'request_id=eq.'+c.id},x=>addMsg(x.new)).subscribe()}
+
+function addMsg(x){if(document.getElementById('m'+x.id))return;const d=el('div','msg'+(x.sender_id===myId?' me':''),x.body);d.id='m'+x.id;const m=$('msgs');m.append(d);m.scrollTop=m.scrollHeight}
+async function sendMsg(e){e.preventDefault();const i=$('msgIn'),t=i.value.trim();if(!t||!chatReq)return;i.value='';const{data,error}=await sb.from('messages').insert({request_id:chatReq.id,body:t}).select('id,sender_id,body').single();if(error){i.value=t;return toast(error.message)}addMsg(data)}
+function leaveChat(){if(chan){sb.removeChannel(chan);chan=null}chatReq=null;$('chatView').hidden=true;$('inList').hidden=false}
+
+async function blockU(id){if(!confirm('Block this person? You will no longer see each other.'))return;const{error}=await sb.rpc('block_user',{p_id:id});if(error)return toast(error.message);toast('Blocked.');closeInbox();load()}
+async function reportU(id){const r=prompt('Why are you reporting this person? (3-500 characters)');if(!r)return;const{error}=await sb.rpc('report_user',{p_id:id,p_reason:r});if(error)return toast(error.message);toast('Reported and blocked. Thank you.');closeInbox();load()}
+
+const SHARE_TXT='Join me on Milo and meet people who share your hobbies.';
+const shareUrl=()=>location.origin+(me&&me.username?'/?ref='+me.username:'/');
+function refUI(){$('refLine').textContent=me&&me.username?shareUrl():(me?'Set a username in My profile to get your personal invite link.':'Log in to get your personal invite link, or share the main link: '+location.origin);
+$('refCount').textContent='';if(ok&&me&&me.username)sb.rpc('my_referral_count').then(r=>{if(!r.error)$('refCount').textContent=r.data+(r.data===1?' person has':' people have')+' joined with your link.'})}
+async function shareMilo(){if(navigator.share){try{await navigator.share({title:'Milo',text:SHARE_TXT,url:shareUrl()})}catch(e){}}else copyMilo()}
+function waMilo(){window.open('https://wa.me/?text='+encodeURIComponent(SHARE_TXT+' '+shareUrl()),'_blank','noopener')}
+async function copyMilo(){try{await navigator.clipboard.writeText(shareUrl());toast('Link copied.')}catch(e){toast(shareUrl())}}
+
+async function sendFb(e){e.preventDefault();if(!me){toast('Log in to send feedback.');return openAuth('login')}const{error}=await sb.from('feedback').insert({rating:+$('fbR').value,message:$('fbM').value.trim()});if(error)return toast(error.message);$('fbM').value='';$('fbR').value='';toast('Thank you for your feedback!')}
+
+const TURNSTILE_KEY='';/* optional: Cloudflare Turnstile site key (free). Khali = CAPTCHA band */
+let capTok=null,capOn=false;
+function capInit(){if(!TURNSTILE_KEY||capOn)return;capOn=true;const t=document.createElement('script');t.src='https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';t.async=true;t.onload=()=>turnstile.render('#cap',{sitekey:TURNSTILE_KEY,callback:x=>capTok=x});document.head.append(t)}
+
+let bp='Milo Help',bh={};
+const SAFE=/(give|tell|show|share|send|leak|reveal|dump|hack|bypass|steal).*(password|otp|email|phone|number|key|token|database|admin|account|data)|service.?role|api.?key|admin (panel|page|login)|\bsql\b/i;
+const SAFE_MSG='I cannot help with passwords, OTPs, keys, admin access or anyone’s private details. For account help use “Forgot password?” on the login form, or WhatsApp +91 8960056517.';
+const HELP=[
+  [/\b18\b|age|adult/i,'Milo is for adults 18+ only. Your age is verified when you sign up.'],
+  [/free|price|cost|paid|premium|member/i,'Milo is 100% free. There are no paid plans, subscriptions or VIP memberships.'],
+  [/call|video|voice/i,'Milo has no voice or video calls. You can chat freely once a request is accepted.'],
+  [/chat|message|request/i,'Send a request from Friends or Dating. When the other person accepts, open Chats to talk.'],
+  [/block|report|fake|abuse|harass|scam/i,'Open a chat and tap Block or Report. Reporting blocks the person and notifies moderation. Never share OTPs, passwords or money.'],
+  [/delete|remove|privacy|data/i,'My profile → Delete my account permanently removes your profile, messages and requests.'],
+  [/hobb|suggest|match|search|username/i,'Set hobbies and a username in My profile. Friends and Dating show people who share them, same city first. You can search by name or username.'],
+  [/mode|friends|dating/i,'Friends and Dating are separate modes. Choose Friends, Dating or Both in My profile.'],
+  [/google|gmail|oauth/i,'Aap "Continue with Google" se directly 1-click mein login/signup kar sakte hain. First time par 18+ DOB verify karna hoga.'],
+  [/refer|invite|share/i,'Set a username in My profile, then use Invite your friends on the home page for your link.'],
+  [/contact|support|owner|who/i,'Milo is founded and run by Shiva Tiwari, Ayodhya. WhatsApp +91 8960056517 or amshivatiwari444@gmail.com.'],
+  [/login|log in|signup|sign up|account|join/i,'Use Join to sign up (18+, Google or Email) and Log in to return. Forgot your password? Use the link on the login form.']
+];
+
+const SMALL=[
+  [/^(hi+|hello|hey|namaste|salaam|kem cho|kya haal)\b/i,['Hey! Milo par kya explore kar rahe ho?','Namaste! Milo par kaisa lag raha hai?','Hello! How is your day going?']],
+  [/how are you|kaise ho|kya haal|kya kar rahe/i,['Main ekdam badiya! Aap batao, aaj ka din kaisa raha?','Doing great, thanks! Naye doston se baat hui?']],
+  [/\b(real|human|robot|bot|ai|insan)\b/i,['Main ek automated chat bot hoon, real person nahi. Milo par safe conversation practice ke liye yahan hoon!']],
+  [/dating|match|date|ladki|ladka/i,['Dating mode select karke same hobbies wale logon ko request bhejo. Chat tabhi khulegi jab dono accept karein!']],
+  [/friend|dost|dosti/i,['Friends mode mein apne shahar aur pasand ke doston ko dhundo. Chai, cricket ya gaming buddy milna asaan hai!']],
+  [/hobb|free time|shauk/i,(h)=>h.length?'Aapne hobbies mein '+h.slice(0,3).join(', ')+' chuna hai. Inke baare mein aur batao!':'My profile mein jaake hobbies select karo, phir baat karne ka maza aayega.'],
+  [/cricket/i,['Cricket! Khelna pasand hai ya match dekhna? Fav cricketer kaun hai?']],
+  [/music|song|sing|gana/i,['Sangeet to har mood ki dawa hai! Aaj kal kaunsa gaana loop par sun rahe ho?']],
+  [/movie|series|anime|cinema/i,['Waah! Last movie ya series kaunsi dekhi jo sabse zabardast lagi?']],
+  [/food|chai|eat|biryani|khana/i,['Ab to bhook lag gayi! Street food pasand hai ya ghar ka khana? Chai ya coffee?']],
+  [/travel|trip|ghoomna/i,['Ghoomne ka plan kab ban raha hai? Dream destination kaunsi hai?']],
+  [/joke|funny|hansi/i,['Teacher: "Homework kyu nahi kiya?" Student: "Sir, light chali gayi thi." Teacher: "To mombatti jala lete!" Student: "Sir, maachis mandir mein rakhi thi, naha ke nahi gaya tha!" 😂']],
+  [/thank|shukriya|dhanyawad/i,['Arey anytime! Milo enjoy karo!']],
+  [/bye|good night|\bgn\b|alvida/i,['Alvida! Take care aur jald milte hain.']]
+];
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+
+function botReply(n,m){
+  if(n==='Milo Help'){
+    if(/forgot|reset|change.*pass/i.test(m))return 'On the Log in form, tap “Forgot password?”, enter your email and open the link we send.';
+    if(SAFE.test(m))return SAFE_MSG;
+    for(const[r,a]of HELP)if(r.test(m))return a;
+    return 'I can help with signup, Google login, modes, chat, safety and privacy. Try one of those, or WhatsApp +91 8960056517.';
+  }
+  if(SAFE.test(m))return SAFE_MSG;
+  const h=(me&&me.hobbies)||[];
+  for(const[r,a]of SMALL)if(r.test(m))return typeof a==='function'?a(h):pick(a);
+  return pick(['Interesting! Aur batao iske baare mein.','Sahi baat hai! Aapko yeh kab se pasand hai?','Haha, bilkul! Aur kya enjoy karte ho?','Awesome! What is your favourite part about that?']);
+}
+
+function botToggle(){const p=$('botPanel'),o=p.hidden;p.hidden=!o;$('botFab').setAttribute('aria-expanded',o);if(o){botSel(bp);$('bi').focus()}}
+function botSel(n){
+  bp=n;['Milo Help','Aarav','Anaya'].forEach((x,i)=>$('t'+i).classList.toggle('on',x===n));
+  $('bl').replaceChildren();
+  (bh[n]=bh[n]||[{r:'b',t:n==='Milo Help'?'Hi! Ask me about signup, Google login, modes, chat or safety. I am an automated helper.':'Hi, I am '+n+', a Milo chat bot (not a real person). Say hi!'}]).forEach(m=>bAdd(m.r,m.t,false));
+}
+
+function bAdd(r,t,save=true){
+  const l=$('bl'),d=el('div','bm'+(r==='u'?' u':''));
+  if(r==='b'){
+    const badge=el('span','tag','BOT');
+    badge.style.cssText='font-size:9px;padding:1px 5px;margin-right:6px;vertical-align:middle;display:inline-block';
+    d.append(badge);
+  }
+  d.append(document.createTextNode(t));
+  l.append(d);l.scrollTop=l.scrollHeight;
+  if(save)bh[bp].push({r,t});
+}
+
+function botSend(e){
+  e.preventDefault();const i=$('bi'),t=i.value.trim();if(!t)return;
+  i.value='';bAdd('u',t);const n=bp;
+  setTimeout(()=>{if(bp===n)bAdd('b',botReply(n,t));else bh[n].push({r:'b',t:botReply(n,t)})},400);
+}
+
+async function delAcc(){if(!confirm('Delete your account and profile permanently? This cannot be undone.'))return;const{error}=await sb.rpc('delete_my_account');if(error)return toast('Could not delete: '+error.message);closeProf();await sb.auth.signOut({scope:'local'});toast('Your account was deleted.')}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAuth();closeProf();closeInbox();$('botPanel').hidden=true}});
+
+function setTabs(){refUI();$('tabF').classList.toggle('on',mode==='Friends');$('tabD').classList.toggle('on',mode==='Dating')}
+function showPeople(m){if(!me){toast('Log in to see people.');return openAuth('login')}mode=m;setTabs();$('people').hidden=false;$('people').scrollIntoView({behavior:'smooth'});load()}
+const empty=t=>{const d=el('div','empty',t);$('cards').append(d)};
+
+async function load(){
+  if(!me)return;await loadConns();const box=$('cards');box.replaceChildren();$('hint').hidden=!!(me.hobbies&&me.hobbies.length&&me.username);
+  if(me.looking_for!=='Both'&&me.looking_for!==mode)return empty('Your profile is set to '+me.looking_for+'. Choose Both in My profile to see '+mode+' mode.');
+  const{data:raw,error}=await sb.rpc('get_people',{p_mode:mode,p_q:$('q').value.trim()||null});
+  const data=(raw||[]).filter(p=>!blocked.has(p.id));
+  if(error)return toast('Could not load: '+error.message);
+  if(!data.length)return empty('No people found yet. Invite friends to join Milo.');
+  data.forEach(p=>{
+    const c=el('article','pc glass');c.append(el('h3','',p.name));
+    c.append(el('small','',(p.username?'@'+p.username+' · ':'')+p.city+(p.same_city?' · same city':'')));
+    c.append(el('div','m',p.shared_count?p.shared_count+(p.shared_count===1?' hobby':' hobbies')+' in common':'No hobbies in common yet'));
+    const g=el('div','tg');
+    p.shared_hobbies.forEach(h=>g.append(el('span','t hit',h)));
+    p.hobbies.filter(h=>!p.shared_hobbies.includes(h)).forEach(h=>g.append(el('span','t',h)));
+    p.vibes.forEach(v=>g.append(el('span','t',v)));
+    c.append(g);
+    c.append(actBtn(p));
+    const k=el('button','lnk','Block');k.onclick=()=>blockU(p.id);c.append(k);
+    box.append(c);
+  });
+}
+
+try{const r=new URLSearchParams(location.search).get('ref');if(r&&/^[a-z0-9_]{3,20}$/i.test(r))localStorage.setItem('milo_ref',r.toLowerCase())}catch(e){}
+try{if(!localStorage.getItem('milo_ck'))$('ck').hidden=false}catch(e){}
+function ckOk(){try{localStorage.setItem('milo_ck','1')}catch(e){}$('ck').hidden=true}
+
+async function refresh(){
+  if(!ok)return;
+  const{data:{session}}=await sb.auth.getSession(),on=!!session;
+  ['loginBtn','joinBtn'].forEach(i=>$(i).hidden=on);
+  myId=on?session.user.id:null;
+  ['logoutBtn','profBtn','inboxBtn'].forEach(i=>$(i).hidden=!on);
+  $('userBox').hidden=!on;
+
+  if(!on){me=null;$('people').hidden=true;refUI();return}
+
+  const{data}=await sb.from('profiles').select('name,city,username,looking_for,hobbies,vibes,date_of_birth,gender,is_banned').eq('id',session.user.id).maybeSingle();
+  if(data){
+    if(data.is_banned){
+      toast('Your account has been suspended for violating safety guidelines.');
+      await sb.auth.signOut();
+      return;
+    }
+    if(!data.date_of_birth||!data.city||!data.looking_for){
+      me=data;
+      $('userBox').textContent=data.name||session.user.email;
+      openOb(data,session.user);
+      return;
+    }
+  }
+  me=data;
+  $('userBox').textContent=data?data.name:session.user.email;
+  if(data){$('people').hidden=false;setTabs();load()}
+}
+
+refUI();
+if(ok){
+  sb.auth.onAuthStateChange(ev=>{
+    if(ev==='PASSWORD_RECOVERY')openAuth('newpass');
+    refresh();
+  });
+  refresh();
+}
+</script></body></html>
