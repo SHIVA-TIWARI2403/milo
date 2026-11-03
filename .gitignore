@@ -1,0 +1,13 @@
+# Security & Secret protection
+*.sql
+*.env
+*.env.*
+*.key
+*.pem
+*backup*
+*.bak
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
