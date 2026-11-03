@@ -1,0 +1,30 @@
+# Milo
+
+> Milo is a free website where adults aged 18 and over meet people who share their hobbies. Members choose Friends mode, Dating mode or both, send requests, and chat once a request is accepted. Milo is operated by Shiva Tiwari in Ayodhya, India.
+
+Milo is for adults 18+ only. It has no paid plans and no voice or video calls.
+
+## Pages
+- [Home](https://milosathi.netlify.app/): what Milo is, how it works, safety tips, FAQ and what is live
+- [Privacy, Terms and Cookies](https://milosathi.netlify.app/legal.html): privacy policy, terms and conditions, cookies policy
+
+## What works today
+- Sign up and log in (18+ age check at signup)
+- Profile with hobbies, vibe, username and mode (Friends, Dating or Both)
+- Suggestions of people who share hobbies, same city first, plus search by name or username
+- Friend requests, live chat after a request is accepted, block and report
+- Invite link, feedback form, delete-my-account option
+- Help chatbot and two simple scripted chat bots (Aarav and Anaya), clearly labelled as bots
+
+## What is not available
+- Voice or video calls
+- Paid plans or memberships
+- Google, Facebook or phone-number login (not yet built)
+
+## Privacy in short
+- Other members see only name, username, city, hobbies and vibe. Email, date of birth and gender are never shown.
+- Accounts and all related data can be deleted from My profile.
+
+## Contact
+- Email: amshivatiwari444@gmail.com
+- WhatsApp: +91 8960056517
