@@ -16,7 +16,7 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Milo — Meet people who like what you like">
 <meta name="twitter:description" content="Meet adults 18+ who share your hobbies. Friends or Dating mode. Free.">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Milo","url":"https://milosathi.netlify.app/","description":"A free website where adults 18+ meet people who share their hobbies.","inLanguage":"en-IN"},{"@type":"Organization","name":"Milo","url":"https://milosathi.netlify.app/","founder":{"@type":"Person","name":"Shiva Tiwari"},"address":{"@type":"PostalAddress","addressLocality":"Ayodhya","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","email":"amshivatiwari444@gmail.com","contactType":"customer support"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Milo","url":"https://milosathi.netlify.app/","description":"A free website where adults 18+ meet people who share their hobbies.","inLanguage":"en-IN"},{"@type":"Organization","name":"Milo","url":"https://milosathi.netlify.app/","founder":{"@type":"Person","name":"Shiva Tiwari"},"address":{"@type":"PostalAddress","addressLocality":"Ayodhya","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","email":"tiwarisatendrapratap@gmail.com","contactType":"customer support"}}]}</script>
 <style>
 :root{--display:'Segoe UI',system-ui,sans-serif;--body:'Segoe UI',system-ui,sans-serif;--ink:#f6f2ff;--mut:#cfc8e4;--em:#ff8a5c;--or:#b79cff;--mint:#62e6bd}
 *{box-sizing:border-box}[hidden]{display:none!important}
@@ -157,7 +157,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <details class="glass"><summary>Mera data aur password safe hai?</summary><p>Password hum nahi dekh sakte, wo Supabase mein encrypted rehta hai. Aapki date of birth aur email dusre users ko nahi dikhte; sirf naam, username, city aur hobbies dikhte hain.</p></details>
 <details class="glass"><summary>Kaun join kar sakta hai?</summary><p>Sirf 18+ log. Age signup ke time database mein check hoti hai.</p></details>
 <details class="glass"><summary>Kya yahan chat hai?</summary><p>Haan. Kisi ko request bhejo, accept hone par chat khulti hai. Block aur report har chat mein hai. Calls aur paid plans Milo mein nahi honge.</p></details>
-<div class="copy"><b>Milo</b> · Operated by Shiva Tiwari, Ayodhya, India · WhatsApp +91 8960056517 · <a href="mailto:amshivatiwari444@gmail.com">amshivatiwari444@gmail.com</a><br><a href="legal.html#privacy">Privacy Policy</a> · <a href="legal.html#terms">Terms</a> · <a href="legal.html#cookies">Cookies</a> · © 2026 Milo</div></footer>
+<div class="copy"><b>Milo</b> · Operated by Shiva Tiwari, Ayodhya, India · Contact: <a href="mailto:tiwarisatendrapratap@gmail.com">tiwarisatendrapratap@gmail.com</a><br><a href="legal.html#privacy">Privacy Policy</a> · <a href="legal.html#terms">Terms</a> · <a href="legal.html#cookies">Cookies</a> · © 2026 Milo</div></footer>
 
 <!-- AUTH MODAL -->
 <div id="authBg" class="bg" onclick="if(event.target===this)closeAuth()"><div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="aTitle">
@@ -371,7 +371,7 @@ function capInit(){if(!TURNSTILE_KEY||capOn)return;capOn=true;const t=document.c
 
 let bp='Milo Help',bh={};
 const SAFE=/(give|tell|show|share|send|leak|reveal|dump|hack|bypass|steal).*(password|otp|email|phone|number|key|token|database|admin|account|data)|service.?role|api.?key|admin (panel|page|login)|\bsql\b/i;
-const SAFE_MSG='I cannot help with passwords, OTPs, keys, admin access or anyone’s private details. For account help use “Forgot password?” on the login form, or WhatsApp +91 8960056517.';
+const SAFE_MSG='I cannot help with passwords, OTPs, keys, admin access or anyone’s private details. For account help use “Forgot password?” on the login form, ';
 const HELP=[
   [/\b18\b|age|adult/i,'Milo is for adults 18+ only. Your age is verified when you sign up.'],
   [/free|price|cost|paid|premium|member/i,'Milo is 100% free. There are no paid plans, subscriptions or VIP memberships.'],
@@ -383,7 +383,7 @@ const HELP=[
   [/mode|friends|dating/i,'Friends and Dating are separate modes. Choose Friends, Dating or Both in My profile.'],
   [/google|gmail|oauth/i,'Aap "Continue with Google" se directly 1-click mein login/signup kar sakte hain. First time par 18+ DOB verify karna hoga.'],
   [/refer|invite|share/i,'Set a username in My profile, then use Invite your friends on the home page for your link.'],
-  [/contact|support|owner|who/i,'Milo is founded and run by Shiva Tiwari, Ayodhya. WhatsApp +91 8960056517 or amshivatiwari444@gmail.com.'],
+  [/contact|support|owner|who/i,'Milo is founded and run by Shiva Tiwari, Ayodhya. Email: tiwarisatendrapratap@gmail.com.'],
   [/login|log in|signup|sign up|account|join/i,'Use Join to sign up (18+, Google or Email) and Log in to return. Forgot your password? Use the link on the login form.']
 ];
 
@@ -410,7 +410,7 @@ function botReply(n,m){
     if(/forgot|reset|change.*pass/i.test(m))return 'On the Log in form, tap “Forgot password?”, enter your email and open the link we send.';
     if(SAFE.test(m))return SAFE_MSG;
     for(const[r,a]of HELP)if(r.test(m))return a;
-    return 'I can help with signup, Google login, modes, chat, safety and privacy. Try one of those, or WhatsApp +91 8960056517.';
+    return 'I can help with signup, Google login, modes, chat, safety and privacy. Try one of those, ';
   }
   if(SAFE.test(m))return SAFE_MSG;
   const h=(me&&me.hobbies)||[];
