@@ -21,13 +21,16 @@
 ## 🚀 Key Features
 
 * 🎯 **Hobby & Vibe Matching:** Connect over shared passions (Cricket, Coding, Travel, Music, Books, Gaming, Chai & Street food, and more).
-* 🔄 **Dual Connection Modes:** Seamlessly switch between **Friends** mode, **Dating** mode, or **Both**.
+* 🎨 **Dynamic Avatars & Visual Identity:** Sleek deterministic gradient avatars with initials on cards, inbox, and active chats.
+* 🔄 **Dual Connection Modes:** Seamlessly switch between **Friends** mode, **Dating** mode, or **Both** (includes 1-click mode switching).
+* 💬 **Enhanced Real-time Messaging:** Fast bidirectional chat with formatted timestamps, empty-state icebreakers, unread request counter badges, and instant block & report controls.
+* 📱 **Full Mobile Optimization:** Responsive glassmorphic mobile navigation drawer with hamburger menu.
+* 📝 **Personal Bio Support:** Express your vibe with a short bio directly on your profile card.
 * 🔐 **1-Click Google OAuth:** Fast, secure login with built-in server-side 18+ age verification.
 * 🛡️ **Privacy by Design:**
   * Sensitive data (email, date of birth, gender) is **strictly private** and never shared with other users.
-  * Only your chosen name, username, city, hobbies, and vibe are displayed.
-* 💬 **Real-time Messaging:** Fast bidirectional chat with instant block & report safety controls.
-* 🤖 **AI Chat Companions:** Interactive bot companions (Aarav & Anaya) for safe platform onboarding.
+  * Only your chosen name, username, city, hobbies, vibe, and optional bio are displayed.
+* 🤖 **AI Chat Companions:** Interactive bot companions (Aarav & Anaya) for safe platform onboarding with built-in prompt safety filters.
 * 📊 **Google Analytics (GA4) Integrated:** Real-time visitor insights and analytics.
 
 ---

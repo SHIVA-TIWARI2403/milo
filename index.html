@@ -9,13 +9,19 @@
 
   gtag('config', 'G-QTNPKYNL87');
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=a0a23bb5-ab09-420b-943f-d11014dd0197
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. --><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://challenges.cloudflare.com https://accounts.google.com https://apis.google.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.googleusercontent.com https://lh3.googleusercontent.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://challenges.cloudflare.com https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; base-uri 'self'; form-action 'self' https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'">
 <title>Milo — Meet people who like what you like</title>
 <meta name="description" content="Milo helps adults 18+ meet people who share their hobbies. Choose Friends or Dating mode, send requests and chat safely. Free to join.">
 <meta name="google-site-verification" content="Ew0HdffpLq7fEDpLZuEfhThRLEuFWNj_Yr4Jw-E7I7E" />
 <meta name="robots" content="index,follow">
 <meta name="theme-color" content="#0a0614">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/favicon.svg">
 <link rel="canonical" href="https://milosathi.netlify.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Milo">
@@ -32,16 +38,23 @@
 *{box-sizing:border-box}[hidden]{display:none!important}
 body{margin:0;min-height:100vh;background:#0a0614;color:var(--ink);font:16px/1.6 var(--body)}
 body:before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(45vw 45vw at 12% 8%,#ff8a5c66,transparent 70%),radial-gradient(50vw 50vw at 90% 20%,#8b6cff77,transparent 70%),radial-gradient(45vw 45vw at 50% 105%,#2fd3a755,transparent 70%)}
-button,input,select{font:inherit;color:inherit}button{cursor:pointer;border:0}a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0}a{color:inherit}
 :focus-visible{outline:2px solid var(--em);outline-offset:3px}
 .wrap{max-width:1100px;margin:auto;padding:0 20px}
 .glass{background:rgba(255,255,255,.08);backdrop-filter:blur(20px) saturate(150%);-webkit-backdrop-filter:blur(20px) saturate(150%);border:1px solid rgba(255,255,255,.16);border-radius:24px;box-shadow:0 10px 40px rgba(0,0,0,.35)}
-.nav{position:sticky;top:12px;z-index:20;margin:12px auto;max-width:1100px;width:calc(100% - 24px);padding:10px 18px;display:flex;align-items:center;gap:18px;justify-content:space-between;border-radius:999px}
+.nav{position:sticky;top:12px;z-index:30;margin:12px auto;max-width:1100px;width:calc(100% - 24px);padding:10px 18px;display:flex;align-items:center;gap:18px;justify-content:space-between;border-radius:999px}
 .brand{font:800 26px var(--display);letter-spacing:-1px;text-decoration:none}
 .nav nav{display:flex;gap:22px;color:var(--mut)}.nav nav a{text-decoration:none}.nav nav a:hover{color:var(--ink)}
 .right{display:flex;align-items:center;gap:8px}
-.btn{padding:10px 18px;border-radius:999px;font-weight:700;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+.btn{padding:10px 18px;border-radius:999px;font-weight:700;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);transition:.15s ease}
+.btn:hover{background:rgba(255,255,255,.16)}
 .btn.main{background:var(--em);border-color:var(--em);color:#1a0e08}
+.btn.main:hover{background:#ffa07a}
+.menu-btn{display:none;padding:8px 14px;font-size:18px;line-height:1}
+.mobile-drawer{position:fixed;top:72px;left:12px;right:12px;z-index:35;padding:16px;display:flex;flex-direction:column;gap:10px;border-radius:20px;max-width:1100px;margin:auto}
+.mobile-drawer a{text-decoration:none;font-weight:600;padding:10px 14px;border-radius:12px;transition:background .15s}
+.mobile-drawer a:hover{background:rgba(255,255,255,.1)}
+.m-auth-links{display:flex;flex-direction:column;gap:8px;padding-top:10px;border-top:1px solid rgba(255,255,255,.15)}
 select{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 10px}option{color:#111}
 html{scroll-behavior:smooth;scroll-padding-top:92px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .hero{padding:96px 44px 80px;margin:28px 0;min-height:78vh;display:flex;flex-direction:column;justify-content:center}
@@ -58,9 +71,13 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}@media(prefers-reduced-motio
 .tabs button.on{background:var(--ink);color:#1a1030}
 #q{flex:1;min-width:200px;padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.25)}
 #hint{color:var(--mut);font-size:14px;margin:0 0 14px}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
 .pc{padding:20px;display:flex;flex-direction:column;gap:10px;border-radius:20px}
-.pc h3{font:700 22px var(--display);margin:0}.pc small{color:var(--mut)}
+.pc-header{display:flex;align-items:center;gap:12px}
+.pc-titles{display:flex;flex-direction:column;gap:2px}
+.pc-titles h3{font:700 20px var(--display);margin:0}
+.pc-titles small{color:var(--mut);font-size:13px}
+.pc-bio{color:var(--mut);font-size:13px;line-height:1.45;margin:2px 0 6px;padding:6px 10px;background:rgba(0,0,0,.2);border-radius:10px;border-left:3px solid var(--or)}
 .tg{display:flex;flex-wrap:wrap;gap:6px}.t{font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.2);color:var(--mut)}
 .t.hit{background:#ff8a5c33;border-color:var(--em);color:#ffc2a8}
 .m{color:var(--mint);font-size:14px;font-weight:600}.pc .btn{margin-top:auto}
@@ -73,14 +90,26 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 .modal h2{font:800 26px var(--display);margin:0 0 4px}.modal p{margin:0;color:var(--mut);font-size:14px}
 .x{float:right;background:none;font-size:26px;color:var(--mut)}
 .f{display:grid;gap:5px;margin:12px 0}.f label{font-size:13px;font-weight:600;color:var(--mut)}
-.f input,.f select{width:100%;border-radius:12px;padding:12px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.2)}
+.f input,.f select,.f textarea{width:100%;border-radius:12px;padding:12px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.2)}
 .picks{display:flex;flex-wrap:wrap;gap:7px}.pk{position:relative}
 .pk input{position:absolute;inset:0;opacity:0;width:100%;height:100%;margin:0;cursor:pointer}
 .pk span{display:inline-block;padding:7px 13px;border:1px solid rgba(255,255,255,.22);border-radius:999px;font-size:14px;font-weight:600;color:var(--mut)}
 .pk input:checked+span{background:var(--em);border-color:var(--em);color:#1a0e08}.pk input:focus-visible+span{outline:2px solid var(--or)}
 .ph{display:flex;justify-content:space-between;font-size:13px;font-weight:600;color:var(--mut);margin:16px 0 8px}
 .lnk{background:none;color:var(--or);padding:6px 0;font-size:14px;text-decoration:underline}
-.msgs{height:300px;overflow:auto;display:flex;flex-direction:column;gap:6px;margin:12px 0;padding:6px}.msg{max-width:80%;padding:8px 13px;border-radius:14px;background:rgba(255,255,255,.12);align-self:flex-start;overflow-wrap:anywhere}.msg.me{align-self:flex-end;background:var(--em);color:#1a0e08}.sendf{display:flex;gap:8px}.sendf input{flex:1;padding:12px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.3)}.chh{display:flex;justify-content:space-between;align-items:center;gap:8px}.rw2{display:flex;gap:8px;align-items:center;justify-content:space-between;width:100%;margin:6px 0;text-align:left}#inList h3{margin:16px 0 4px;font-size:16px}
+.avatar{display:inline-grid;place-items:center;border-radius:50%;font-weight:800;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.3);box-shadow:0 3px 10px rgba(0,0,0,.3);flex-shrink:0;user-select:none}
+.avatar-sm{width:30px;height:30px;font-size:11px}
+.avatar-md{width:46px;height:46px;font-size:16px}
+.avatar-lg{width:64px;height:64px;font-size:22px}
+.msgs{height:300px;overflow:auto;display:flex;flex-direction:column;gap:8px;margin:12px 0;padding:6px}
+.msg{max-width:80%;padding:9px 13px;border-radius:16px;background:rgba(255,255,255,.12);align-self:flex-start;overflow-wrap:anywhere;display:flex;flex-direction:column;gap:2px}
+.msg.me{align-self:flex-end;background:var(--em);color:#1a0e08}
+.msg-text{word-break:break-word}
+.msg-time{font-size:10px;opacity:.7;align-self:flex-end;margin-top:2px}
+.sendf{display:flex;gap:8px}.sendf input{flex:1;padding:12px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.3)}
+.chh{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.rw2{display:flex;gap:10px;align-items:center;justify-content:space-between;width:100%;margin:6px 0;text-align:left;padding:10px 14px}
+#inList h3{margin:16px 0 6px;font-size:16px}
 .fbf{padding:30px;display:grid;gap:10px;max-width:560px}.fbf label{font-size:14px;color:var(--mut);font-weight:600}.fbf select,.fbf textarea{width:100%;padding:12px;border-radius:12px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.2);font:inherit}
 #botFab{position:fixed;right:16px;bottom:16px;z-index:30;padding:12px 20px;box-shadow:0 6px 24px rgba(0,0,0,.4)}
 #botPanel{position:fixed;right:16px;bottom:72px;width:min(380px,calc(100vw - 32px));z-index:31;padding:14px;display:flex;flex-direction:column;gap:8px}
@@ -96,17 +125,47 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 .road{display:grid;gap:10px}.rw{display:flex;justify-content:space-between;gap:14px;padding:16px 22px;align-items:center}
 .tag{font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.3);white-space:nowrap}.tag.l{color:var(--mint);border-color:var(--mint)}
 .band{padding:64px 32px;text-align:center}.band h2{margin:0 0 20px}
-@media(max-width:760px){.split{grid-template-columns:1fr}.sec{margin:80px 0}}
 #toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:#15111d;padding:12px 20px;border-radius:14px;z-index:50;transition:.25s;font-weight:600;max-width:90vw}#toast.show{opacity:1;transform:translate(-50%,0)}
-@media(max-width:760px){.nav nav,#userBox{display:none}.hero{padding:34px 22px}.modes{grid-template-columns:1fr}}
+@media(max-width:760px){
+  .menu-btn{display:inline-block}
+  .nav nav,#userBox,#fontSel{display:none}
+  .hero{padding:34px 22px}
+  .modes{grid-template-columns:1fr}
+  .split{grid-template-columns:1fr}.sec{margin:80px 0}
+  .right .btn:not(.menu-btn):not(#joinBtn):not(#inboxBtn){display:none}
+}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script></head>
 <body>
 <header class="nav glass"><a class="brand" href="#">milo</a>
 <nav><a href="#people" onclick="showPeople('Friends');return false">Friends</a><a href="#people" onclick="showPeople('Dating');return false">Dating</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
-<div class="right"><select id="fontSel" aria-label="Choose font" onchange="setFont(this.value)"></select><span id="userBox" hidden></span>
-<button id="inboxBtn" class="btn" hidden onclick="openInbox()">Chats</button><button id="profBtn" class="btn" hidden onclick="openProf()">My profile</button><button id="logoutBtn" class="btn" hidden onclick="sb.auth.signOut().then(()=>toast('Logged out.'))">Log out</button>
-<button id="loginBtn" class="btn" onclick="openAuth('login')">Log in</button><button id="joinBtn" class="btn main" onclick="openAuth('signup')">Join</button></div></header>
+<div class="right">
+  <select id="fontSel" aria-label="Choose font" onchange="setFont(this.value)"></select>
+  <span id="userBox" hidden></span>
+  <button id="inboxBtn" class="btn" hidden onclick="openInbox()">Chats</button>
+  <button id="profBtn" class="btn" hidden onclick="openProf()">My profile</button>
+  <button id="logoutBtn" class="btn" hidden onclick="sb.auth.signOut().then(()=>toast('Logged out.'))">Log out</button>
+  <button id="loginBtn" class="btn" onclick="openAuth('login')">Log in</button>
+  <button id="joinBtn" class="btn main" onclick="openAuth('signup')">Join</button>
+  <button id="menuBtn" class="btn menu-btn" aria-label="Toggle navigation menu" onclick="toggleMenu()">☰</button>
+</div></header>
+
+<!-- MOBILE NAVIGATION DRAWER -->
+<div id="mobileDrawer" class="mobile-drawer glass" hidden>
+  <a href="#people" onclick="showPeople('Friends');closeMenu();return false">👥 Friends Mode</a>
+  <a href="#people" onclick="showPeople('Dating');closeMenu();return false">❤️ Dating Mode</a>
+  <a href="#how" onclick="closeMenu()">💡 How it works</a>
+  <a href="#why" onclick="closeMenu()">✨ Why Milo</a>
+  <a href="#safety" onclick="closeMenu()">🛡️ Stay Safe</a>
+  <a href="#faq" onclick="closeMenu()">❓ FAQ</a>
+  <div id="mAuthLinks" class="m-auth-links">
+    <button id="mInboxBtn" class="btn" hidden onclick="closeMenu();openInbox()">💬 Chats</button>
+    <button id="mProfBtn" class="btn" hidden onclick="closeMenu();openProf()">👤 My Profile</button>
+    <button id="mLogoutBtn" class="btn" hidden onclick="closeMenu();sb.auth.signOut().then(()=>toast('Logged out.'))">Log out</button>
+    <button id="mLoginBtn" class="btn" onclick="closeMenu();openAuth('login')">Log in</button>
+    <button id="mJoinBtn" class="btn main" onclick="closeMenu();openAuth('signup')">Join</button>
+  </div>
+</div>
 
 <main class="wrap">
 <section class="hero glass"><h1>Meet people who like what you like.</h1>
@@ -167,7 +226,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <details class="glass"><summary>Mera data aur password safe hai?</summary><p>Password hum nahi dekh sakte, wo Supabase mein encrypted rehta hai. Aapki date of birth aur email dusre users ko nahi dikhte; sirf naam, username, city aur hobbies dikhte hain.</p></details>
 <details class="glass"><summary>Kaun join kar sakta hai?</summary><p>Sirf 18+ log. Age signup ke time database mein check hoti hai.</p></details>
 <details class="glass"><summary>Kya yahan chat hai?</summary><p>Haan. Kisi ko request bhejo, accept hone par chat khulti hai. Block aur report har chat mein hai. Calls aur paid plans Milo mein nahi honge.</p></details>
-<div class="copy"><b>Milo</b> · Operated by Shiva Tiwari, Ayodhya, India · Contact: <a href="mailto:tiwarisatendrapratap@gmail.com">tiwarisatendrapratap@gmail.com</a><br><a href="legal.html#privacy">Privacy Policy</a> · <a href="legal.html#terms">Terms</a> · <a href="legal.html#cookies">Cookies</a> · © 2026 Milo</div></footer>
+<div class="copy"><b>Milo</b> · Operated by Shiva Tiwari, Ayodhya, India · Contact: <a href="mailto:tiwarisatendrapratap@gmail.com">tiwarisatendrapratap@gmail.com</a><br><a href='/legal#privacy'>Privacy Policy</a> · <a href='/legal#terms'>Terms</a> · <a href='/legal#cookies'>Cookies</a> · © 2026 Milo</div></footer>
 
 <!-- AUTH MODAL -->
 <div id="authBg" class="bg" onclick="if(event.target===this)closeAuth()"><div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="aTitle">
@@ -186,7 +245,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <div class="f"><label for="city">City</label><input id="city" maxlength="80"></div>
 <div class="f"><label for="gender">Gender (optional)</label><select id="gender"><option value="">Choose one</option><option>Woman</option><option>Man</option><option>Non-binary</option><option>Prefer not to say</option></select></div>
 <div class="f"><label for="looking">Looking for</label><select id="looking"><option value="">Choose a mode</option><option>Friends</option><option>Dating</option><option>Both</option></select></div></div>
-<div id="termsRow" style="display:grid;gap:8px;font-size:13px;color:var(--mut)"><label><input id="age18" type="checkbox"> I confirm I am 18 or older.</label><label><input id="terms" type="checkbox"> I have read the <a href="legal.html#privacy" target="_blank">Privacy Policy</a> and agree to the <a href="legal.html#terms" target="_blank">Terms</a>.</label></div>
+<div id="termsRow" style="display:grid;gap:8px;font-size:13px;color:var(--mut)"><label><input id="age18" type="checkbox"> I confirm I am 18 or older.</label><label><input id="terms" type="checkbox"> I have read the <a href='/legal#privacy' target='_blank'>Privacy Policy</a> and agree to the <a href='/legal#terms' target='_blank'>Terms</a>.</label></div>
 <div id="cap"></div>
 <button class="btn main" id="aBtn" style="width:100%;margin-top:16px;padding:14px"></button>
 <button type="button" class="lnk" id="forgot" onclick="openAuth('reset')">Forgot password?</button></form></div></div>
@@ -200,7 +259,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <div class="f"><label for="obCity">City</label><input id="obCity" maxlength="80" required></div>
 <div class="f"><label for="obGender">Gender (optional)</label><select id="obGender"><option value="">Choose one</option><option>Woman</option><option>Man</option><option>Non-binary</option><option>Prefer not to say</option></select></div>
 <div class="f"><label for="obLooking">Looking for</label><select id="obLooking" required><option value="">Choose a mode</option><option>Friends</option><option>Dating</option><option>Both</option></select></div>
-<div style="display:grid;gap:8px;font-size:13px;color:var(--mut);margin:12px 0"><label><input id="obAge18" type="checkbox" required> I confirm I am 18 or older.</label><label><input id="obTerms" type="checkbox" required> I have read the <a href="legal.html#privacy" target="_blank">Privacy Policy</a> and agree to the <a href="legal.html#terms" target="_blank">Terms</a>.</label></div>
+<div style="display:grid;gap:8px;font-size:13px;color:var(--mut);margin:12px 0"><label><input id="obAge18" type="checkbox" required> I confirm I am 18 or older.</label><label><input id="obTerms" type="checkbox" required> I have read the <a href='/legal#privacy' target='_blank'>Privacy Policy</a> and agree to the <a href='/legal#terms' target='_blank'>Terms</a>.</label></div>
 <button class="btn main" id="obBtn" style="width:100%;margin-top:10px;padding:14px">Save &amp; Enter Milo</button>
 </form></div></div>
 
@@ -208,6 +267,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <div id="profBg" class="bg" onclick="if(event.target===this)closeProf()"><div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="pT">
 <button class="x" onclick="closeProf()" aria-label="Close">×</button><h2 id="pT">My profile</h2><p>Used to suggest people to you.</p>
 <div class="f"><label for="uname">Username (3-20 letters, numbers, _)</label><input id="uname" maxlength="20"></div>
+<div class="f"><label for="ubio">About me / Short bio (optional, max 120 chars)</label><input id="ubio" maxlength="120" placeholder="e.g. Love coffee, indie music and weekend trekking"></div>
 <div class="f"><label for="mymode">I am here for</label><select id="mymode"><option>Friends</option><option>Dating</option><option>Both</option></select></div>
 <div class="ph"><span>Hobbies</span><span id="hc"></span></div><div class="picks" id="hobbyPicks"></div>
 <div class="ph"><span>Your vibe</span><span id="vc"></span></div><div class="picks" id="vibePicks"></div>
@@ -216,7 +276,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <!-- INBOX MODAL -->
 <div id="inBg" class="bg" onclick="if(event.target===this)closeInbox()"><div class="modal glass" role="dialog" aria-modal="true" aria-labelledby="inT"><button class="x" onclick="closeInbox()" aria-label="Close">×</button><h2 id="inT">Requests and chats</h2>
 <div id="inList"></div>
-<div id="chatView" hidden><div class="chh"><button class="btn" onclick="renderInbox()">← Back</button><b id="chTitle"></b><span><button class="lnk" onclick="blockU(chatReq.other_id)">Block</button> <button class="lnk" onclick="reportU(chatReq.other_id)">Report</button></span></div>
+<div id="chatView" hidden><div class="chh"><button class="btn" onclick="renderInbox()">← Back</button><div id="chTitle" style="display:flex;align-items:center;gap:8px;font-weight:700"></div><span><button class="lnk" onclick="blockU(chatReq.other_id)">Block</button> <button class="lnk" onclick="reportU(chatReq.other_id)">Report</button></span></div>
 <div id="msgs" class="msgs" aria-live="polite"></div>
 <form class="sendf" onsubmit="sendMsg(event)"><input id="msgIn" maxlength="1000" placeholder="Type a message" aria-label="Message" autocomplete="off"><button class="btn main">Send</button></form></div></div></div>
 
@@ -228,7 +288,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <form class="bf" onsubmit="botSend(event)"><input id="bi" maxlength="300" placeholder="Type a message" aria-label="Message to bot" autocomplete="off"><button class="btn main">Send</button></form>
 <p class="bn">Bots are automated. They cannot see accounts, passwords or other people’s data.</p></div>
 
-<div id="ck" class="glass" role="dialog" aria-label="Cookie notice" hidden><span>Milo uses only essential storage (login, font choice and invite code). No ads or tracking. <a href="legal.html#cookies">Cookies Policy</a></span><button class="btn main" onclick="ckOk()">OK</button></div>
+<div id="ck" class="glass" role="dialog" aria-label="Cookie notice" hidden><span>Milo uses only essential storage (login, font choice and invite code). No ads or tracking. <a href='/legal#cookies'>Cookies Policy</a></span><button class="btn main" onclick="ckOk()">OK</button></div>
 <div id="toast" role="status" aria-live="polite"></div>
 
 <script>
@@ -244,6 +304,52 @@ const FONTS={'Sans-serif':['Segoe UI','Segoe UI','sans-serif'],Serif:['Georgia',
 function setFont(k){const f=FONTS[k]||FONTS['Sans-serif'],r=document.documentElement.style;r.setProperty('--display',`'${f[0]}',${f[2]}`);r.setProperty('--body',`'${f[1]}',${f[2]}`);try{localStorage.setItem('milo_font',k)}catch(e){}}
 Object.keys(FONTS).forEach(k=>$('fontSel').append(new Option(k,k)));
 try{const k=localStorage.getItem('milo_font');if(k&&FONTS[k]){$('fontSel').value=k;setFont(k)}}catch(e){}
+
+// AVATAR SYSTEM
+const AVATAR_GRADIENTS=[
+  'linear-gradient(135deg,#ff8a5c,#ea580c)',
+  'linear-gradient(135deg,#8b6cff,#6366f1)',
+  'linear-gradient(135deg,#2fd3a7,#059669)',
+  'linear-gradient(135deg,#ec4899,#8b5cf6)',
+  'linear-gradient(135deg,#f59e0b,#ef4444)',
+  'linear-gradient(135deg,#06b6d4,#3b82f6)'
+];
+function getInitials(name){
+  if(!name)return 'M';
+  const parts=name.trim().split(/\s+/);
+  return (parts[0][0]+(parts.length>1?parts[parts.length-1][0]:'')).toUpperCase();
+}
+function createAvatar(name,size='md',photoUrl=null){
+  const div=el('div','avatar avatar-'+size);
+  if(photoUrl){
+    const img=document.createElement('img');
+    img.src=photoUrl;
+    img.alt=name;
+    img.style.cssText='width:100%;height:100%;border-radius:50%;object-fit:cover';
+    img.onerror=()=>{img.remove();div.textContent=getInitials(name)};
+    div.append(img);
+  }else{
+    let hash=0;
+    const str=name||'Milo';
+    for(let i=0;i<str.length;i++)hash=(hash*31+str.charCodeAt(i))%AVATAR_GRADIENTS.length;
+    div.style.background=AVATAR_GRADIENTS[Math.abs(hash)];
+    div.textContent=getInitials(name);
+  }
+  return div;
+}
+
+// MOBILE MENU
+function toggleMenu(){
+  const d=$('mobileDrawer');
+  const willShow=d.hidden;
+  d.hidden=!willShow;
+  $('menuBtn').setAttribute('aria-expanded',willShow);
+}
+function closeMenu(){
+  const d=$('mobileDrawer');
+  if(d)d.hidden=true;
+  if($('menuBtn'))$('menuBtn').setAttribute('aria-expanded','false');
+}
 
 const AM={login:{t:'Log in',s:'Welcome back.',f:['fEmail','fPass'],b:'Log in'},signup:{t:'Join Milo',s:'Create your account. Adults 18+ only.',f:['fEmail','fPass','fPass2','profileFields','termsRow'],b:'Create account'},reset:{t:'Reset password',s:'We will email you a reset link.',f:['fEmail'],b:'Send reset link'},newpass:{t:'Set a new password',s:'Choose a new password.',f:['fPass','fPass2'],b:'Save password'}};
 const AF=['fEmail','fPass','fPass2','profileFields','termsRow'],PI=['name','dob','city','looking'];
@@ -326,40 +432,154 @@ function picks(id,list,sel,max,cid){const b=$(id);b.replaceChildren();const u=()
 list.forEach(v=>{const l=el('label','pk'),i=document.createElement('input');i.type='checkbox';i.value=v;i.checked=sel.includes(v);
 i.onchange=()=>{if(b.querySelectorAll('input:checked').length>max){i.checked=false;toast('Pick up to '+max+'.')}u()};l.append(i,el('span','',v));b.append(l)});u()}
 
-function openProf(){$('uname').value=me?.username||'';$('mymode').value=me?.looking_for||'Friends';picks('hobbyPicks',HOBBIES,me?.hobbies||[],10,'hc');picks('vibePicks',VIBES,me?.vibes||[],3,'vc');$('profBg').classList.add('show')}
+function openProf(){
+  $('uname').value=me?.username||'';
+  if($('ubio'))$('ubio').value=me?.bio||'';
+  $('mymode').value=me?.looking_for||'Friends';
+  picks('hobbyPicks',HOBBIES,me?.hobbies||[],10,'hc');
+  picks('vibePicks',VIBES,me?.vibes||[],3,'vc');
+  $('profBg').classList.add('show');
+}
 const closeProf=()=>$('profBg').classList.remove('show');
 
-async function saveProf(){const pk=id=>[...$(id).querySelectorAll('input:checked')].map(i=>i.value),un=$('uname').value.trim().toLowerCase();
-if(un&&!/^[a-z0-9_]{3,20}$/.test(un))return toast('Username: 3-20 letters, numbers or _ only.');
-const u={looking_for:$('mymode').value,hobbies:pk('hobbyPicks'),vibes:pk('vibePicks')};if(un)u.username=un;
-$('sBtn').disabled=true;try{const{data:{session}}=await sb.auth.getSession();const{error}=await sb.from('profiles').update(u).eq('id',session.user.id);
-if(error)return toast(error.code==='23505'?'That username is taken.':'Could not save: '+error.message);
-me={...me,...u};closeProf();toast('Profile saved.');setTabs();load()}finally{$('sBtn').disabled=false}}
+async function saveProf(){
+  const pk=id=>[...$(id).querySelectorAll('input:checked')].map(i=>i.value),un=$('uname').value.trim().toLowerCase();
+  if(un&&!/^[a-z0-9_]{3,20}$/.test(un))return toast('Username: 3-20 letters, numbers or _ only.');
+  const u={looking_for:$('mymode').value,hobbies:pk('hobbyPicks'),vibes:pk('vibePicks')};
+  if(un)u.username=un;
+  const bio=$('ubio')?$('ubio').value.trim():'';
+  if(bio)u.bio=bio;
+  $('sBtn').disabled=true;
+  try{
+    const{data:{session}}=await sb.auth.getSession();
+    let res=await sb.from('profiles').update(u).eq('id',session.user.id);
+    // If 'bio' column does not exist yet in DB, retry update without it gracefully
+    if(res.error&&res.error.message&&res.error.message.includes('bio')){
+      delete u.bio;
+      res=await sb.from('profiles').update(u).eq('id',session.user.id);
+    }
+    if(res.error)return toast(res.error.code==='23505'?'That username is taken.':'Could not save: '+res.error.message);
+    me={...me,...u};
+    closeProf();
+    toast('Profile saved.');
+    setTabs();
+    load();
+  }finally{$('sBtn').disabled=false}
+}
 
-async function loadConns(){const[a,b]=await Promise.all([sb.rpc('get_connections'),sb.from('blocks').select('blocked_id')]);conns=a.data||[];blocked=new Set((b.data||[]).map(x=>x.blocked_id))}
-function actBtn(p){const c=conns.find(x=>x.other_id===p.id),b=el('button','btn');
-if(!c){b.textContent='Send request';b.className='btn main';b.onclick=()=>send(p.id)}
-else if(c.status==='accepted'){b.textContent='Open chat';b.onclick=()=>{openInbox().then(()=>openChat(c))}}
-else if(c.status==='pending'&&c.incoming){b.textContent='Accept request';b.onclick=()=>respond(c.id,true)}
-else{b.textContent=c.status==='pending'?'Request sent':'Declined';b.disabled=true}return b}
+async function quickSwitchMode(newMode){
+  try{
+    const{data:{session}}=await sb.auth.getSession();
+    const{error}=await sb.from('profiles').update({looking_for:newMode}).eq('id',session.user.id);
+    if(error)return toast('Could not switch: '+error.message);
+    me.looking_for=newMode;
+    toast('Switched to '+newMode+' mode.');
+    setTabs();
+    load();
+  }catch(e){toast('Error: '+e.message)}
+}
+
+async function loadConns(){
+  const[a,b]=await Promise.all([sb.rpc('get_connections'),sb.from('blocks').select('blocked_id')]);
+  conns=a.data||[];
+  blocked=new Set((b.data||[]).map(x=>x.blocked_id));
+  const inc=conns.filter(c=>c.status==='pending'&&c.incoming);
+  const badge=inc.length>0?` (${inc.length})`:'';
+  if($('inboxBtn'))$('inboxBtn').textContent='Chats'+badge;
+  if($('mInboxBtn'))$('mInboxBtn').textContent='💬 Chats'+badge;
+}
+
+function actBtn(p){
+  const c=conns.find(x=>x.other_id===p.id),b=el('button','btn');
+  if(!c){b.textContent='Send request';b.className='btn main';b.onclick=()=>send(p.id)}
+  else if(c.status==='accepted'){b.textContent='Open chat';b.onclick=()=>{openInbox().then(()=>openChat(c))}}
+  else if(c.status==='pending'&&c.incoming){b.textContent='Accept request';b.onclick=()=>respond(c.id,true)}
+  else{b.textContent=c.status==='pending'?'Request sent':'Declined';b.disabled=true}
+  return b;
+}
 
 async function send(id){const{error}=await sb.rpc('send_request',{p_to:id,p_mode:mode});if(error)return toast(error.code==='23505'?'A request with this person already exists.':error.message);toast('Request sent.');load()}
 async function respond(id,ok){const{error}=await sb.rpc('respond_request',{p_id:id,p_accept:ok});if(error)return toast(error.message);toast(ok?'Accepted. You can chat now.':'Request declined.');await load();if($('inBg').classList.contains('show'))renderInbox()}
 
 async function openInbox(){await loadConns();renderInbox();$('inBg').classList.add('show')}
 function closeInbox(){$('inBg').classList.remove('show');leaveChat()}
-function renderInbox(){leaveChat();const b=$('inList');b.replaceChildren();const inc=conns.filter(c=>c.status==='pending'&&c.incoming),ch=conns.filter(c=>c.status==='accepted');
-b.append(el('h3','','Requests'));if(!inc.length)b.append(el('p','','No new requests.'));
-inc.forEach(c=>{const r=el('div','rw2');r.append(el('span','',c.name+' ('+c.mode+')'));const a=el('button','btn main','Accept');a.onclick=()=>respond(c.id,true);const d=el('button','btn','Decline');d.onclick=()=>respond(c.id,false);r.append(a,d);b.append(r)});
-b.append(el('h3','','Chats'));if(!ch.length)b.append(el('p','','No chats yet. Accepted requests appear here.'));
-ch.forEach(c=>{const r=el('button','btn rw2',c.name+' · '+c.city);r.onclick=()=>openChat(c);b.append(r)})}
+function renderInbox(){
+  leaveChat();
+  const b=$('inList');b.replaceChildren();
+  const inc=conns.filter(c=>c.status==='pending'&&c.incoming),ch=conns.filter(c=>c.status==='accepted');
+  b.append(el('h3','','Requests'));if(!inc.length)b.append(el('p','','No new requests.'));
+  inc.forEach(c=>{
+    const r=el('div','rw2 glass');
+    const lft=el('div','chh');
+    lft.append(createAvatar(c.name,'sm'),el('span','',c.name+' ('+c.mode+')'));
+    r.append(lft);
+    const btns=el('div','chh');
+    const a=el('button','btn main','Accept');a.onclick=()=>respond(c.id,true);
+    const d=el('button','btn','Decline');d.onclick=()=>respond(c.id,false);
+    btns.append(a,d);
+    r.append(btns);
+    b.append(r);
+  });
+  b.append(el('h3','','Chats'));if(!ch.length)b.append(el('p','','No chats yet. Accepted requests appear here.'));
+  ch.forEach(c=>{
+    const r=el('button','btn rw2 glass');
+    const lft=el('div','chh');
+    lft.append(createAvatar(c.name,'sm'),el('span','',c.name+' · '+c.city));
+    r.append(lft);
+    r.onclick=()=>openChat(c);
+    b.append(r);
+  });
+}
 
-async function openChat(c){chatReq=c;$('inList').hidden=true;$('chatView').hidden=false;$('chTitle').textContent=c.name;const m=$('msgs');m.replaceChildren();
-const{data,error}=await sb.from('messages').select('id,sender_id,body').eq('request_id',c.id).order('created_at').limit(200);if(error)return toast(error.message);(data||[]).forEach(addMsg);
-if(chan)sb.removeChannel(chan);chan=sb.channel('chat-'+c.id).on('postgres_changes',{event:'INSERT',schema:'public',table:'messages',filter:'request_id=eq.'+c.id},x=>addMsg(x.new)).subscribe()}
+function formatTime(iso){
+  if(!iso)return '';
+  try{
+    const d=new Date(iso);
+    return d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});
+  }catch(e){return ''}
+}
 
-function addMsg(x){if(document.getElementById('m'+x.id))return;const d=el('div','msg'+(x.sender_id===myId?' me':''),x.body);d.id='m'+x.id;const m=$('msgs');m.append(d);m.scrollTop=m.scrollHeight}
-async function sendMsg(e){e.preventDefault();const i=$('msgIn'),t=i.value.trim();if(!t||!chatReq)return;i.value='';const{data,error}=await sb.from('messages').insert({request_id:chatReq.id,body:t}).select('id,sender_id,body').single();if(error){i.value=t;return toast(error.message)}addMsg(data)}
+async function openChat(c){
+  chatReq=c;$('inList').hidden=true;$('chatView').hidden=false;
+  const titleBox=$('chTitle');titleBox.replaceChildren();
+  titleBox.append(createAvatar(c.name,'sm'),document.createTextNode(' '+c.name));
+  const m=$('msgs');m.replaceChildren();
+  const{data,error}=await sb.from('messages').select('id,sender_id,body,created_at').eq('request_id',c.id).order('created_at').limit(200);
+  if(error)return toast(error.message);
+  if(!data||!data.length){
+    const emp=el('div','empty',`Say hi to ${c.name}! Start a conversation about your shared hobbies 👋`);
+    emp.style.padding='20px 10px';
+    m.append(emp);
+  }else{
+    data.forEach(addMsg);
+  }
+  if(chan)sb.removeChannel(chan);
+  chan=sb.channel('chat-'+c.id).on('postgres_changes',{event:'INSERT',schema:'public',table:'messages',filter:'request_id=eq.'+c.id},x=>addMsg(x.new)).subscribe();
+}
+
+function addMsg(x){
+  if(document.getElementById('m'+x.id))return;
+  const emptyPlaceholder=$('msgs').querySelector('.empty');
+  if(emptyPlaceholder)emptyPlaceholder.remove();
+  const d=el('div','msg'+(x.sender_id===myId?' me':''));
+  d.id='m'+x.id;
+  d.append(el('div','msg-text',x.body));
+  if(x.created_at){
+    d.append(el('small','msg-time',formatTime(x.created_at)));
+  }
+  const m=$('msgs');
+  m.append(d);
+  m.scrollTop=m.scrollHeight;
+}
+
+async function sendMsg(e){
+  e.preventDefault();const i=$('msgIn'),t=i.value.trim();if(!t||!chatReq)return;
+  i.value='';
+  const{data,error}=await sb.from('messages').insert({request_id:chatReq.id,body:t}).select('id,sender_id,body,created_at').single();
+  if(error){i.value=t;return toast(error.message)}
+  addMsg(data);
+}
+
 function leaveChat(){if(chan){sb.removeChannel(chan);chan=null}chatReq=null;$('chatView').hidden=true;$('inList').hidden=false}
 
 async function blockU(id){if(!confirm('Block this person? You will no longer see each other.'))return;const{error}=await sb.rpc('block_user',{p_id:id});if(error)return toast(error.message);toast('Blocked.');closeInbox();load()}
@@ -367,8 +587,11 @@ async function reportU(id){const r=prompt('Why are you reporting this person? (3
 
 const SHARE_TXT='Join me on Milo and meet people who share your hobbies.';
 const shareUrl=()=>location.origin+(me&&me.username?'/?ref='+me.username:'/');
-function refUI(){$('refLine').textContent=me&&me.username?shareUrl():(me?'Set a username in My profile to get your personal invite link.':'Log in to get your personal invite link, or share the main link: '+location.origin);
-$('refCount').textContent='';if(ok&&me&&me.username)sb.rpc('my_referral_count').then(r=>{if(!r.error)$('refCount').textContent=r.data+(r.data===1?' person has':' people have')+' joined with your link.'})}
+function refUI(){
+  $('refLine').textContent=me&&me.username?shareUrl():(me?'Set a username in My profile to get your personal invite link.':'Log in to get your personal invite link, or share the main link: '+location.origin);
+  $('refCount').textContent='';
+  if(ok&&me&&me.username)sb.rpc('my_referral_count').then(r=>{if(!r.error)$('refCount').textContent=r.data+(r.data===1?' person has':' people have')+' joined with your link.'});
+}
 async function shareMilo(){if(navigator.share){try{await navigator.share({title:'Milo',text:SHARE_TXT,url:shareUrl()})}catch(e){}}else copyMilo()}
 function waMilo(){window.open('https://wa.me/?text='+encodeURIComponent(SHARE_TXT+' '+shareUrl()),'_blank','noopener')}
 async function copyMilo(){try{await navigator.clipboard.writeText(shareUrl());toast('Link copied.')}catch(e){toast(shareUrl())}}
@@ -381,7 +604,7 @@ function capInit(){if(!TURNSTILE_KEY||capOn)return;capOn=true;const t=document.c
 
 let bp='Milo Help',bh={};
 const SAFE=/(give|tell|show|share|send|leak|reveal|dump|hack|bypass|steal).*(password|otp|email|phone|number|key|token|database|admin|account|data)|service.?role|api.?key|admin (panel|page|login)|\bsql\b/i;
-const SAFE_MSG='I cannot help with passwords, OTPs, keys, admin access or anyone’s private details. For account help use “Forgot password?” on the login form, ';
+const SAFE_MSG='I cannot help with passwords, OTPs, keys, admin access or anyone’s private details. For account help use “Forgot password?” on the login form, or contact support at tiwarisatendrapratap@gmail.com.';
 const HELP=[
   [/\b18\b|age|adult/i,'Milo is for adults 18+ only. Your age is verified when you sign up.'],
   [/free|price|cost|paid|premium|member/i,'Milo is 100% free. There are no paid plans, subscriptions or VIP memberships.'],
@@ -420,7 +643,7 @@ function botReply(n,m){
     if(/forgot|reset|change.*pass/i.test(m))return 'On the Log in form, tap “Forgot password?”, enter your email and open the link we send.';
     if(SAFE.test(m))return SAFE_MSG;
     for(const[r,a]of HELP)if(r.test(m))return a;
-    return 'I can help with signup, Google login, modes, chat, safety and privacy. Try one of those, ';
+    return 'I can help with signup, Google login, modes, chat, safety and privacy. Feel free to ask me anything about how Milo works!';
   }
   if(SAFE.test(m))return SAFE_MSG;
   const h=(me&&me.hobbies)||[];
@@ -454,22 +677,51 @@ function botSend(e){
 }
 
 async function delAcc(){if(!confirm('Delete your account and profile permanently? This cannot be undone.'))return;const{error}=await sb.rpc('delete_my_account');if(error)return toast('Could not delete: '+error.message);closeProf();await sb.auth.signOut({scope:'local'});toast('Your account was deleted.')}
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAuth();closeProf();closeInbox();$('botPanel').hidden=true}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeAuth();closeProf();closeInbox();closeMenu();$('botPanel').hidden=true}});
 
 function setTabs(){refUI();$('tabF').classList.toggle('on',mode==='Friends');$('tabD').classList.toggle('on',mode==='Dating')}
 function showPeople(m){if(!me){toast('Log in to see people.');return openAuth('login')}mode=m;setTabs();$('people').hidden=false;$('people').scrollIntoView({behavior:'smooth'});load()}
 const empty=t=>{const d=el('div','empty',t);$('cards').append(d)};
 
 async function load(){
-  if(!me)return;await loadConns();const box=$('cards');box.replaceChildren();$('hint').hidden=!!(me.hobbies&&me.hobbies.length&&me.username);
-  if(me.looking_for!=='Both'&&me.looking_for!==mode)return empty('Your profile is set to '+me.looking_for+'. Choose Both in My profile to see '+mode+' mode.');
+  if(!me)return;
+  await loadConns();
+  const box=$('cards');
+  box.replaceChildren();
+  $('hint').hidden=!!(me.hobbies&&me.hobbies.length&&me.username);
+
+  if(me.looking_for!=='Both'&&me.looking_for!==mode){
+    const d=el('div','empty');
+    d.append(el('p','',`Your profile is currently set to ${me.looking_for} mode.`));
+    const swBtn=el('button','btn main',`Switch to Both & explore ${mode}`);
+    swBtn.style.marginTop='12px';
+    swBtn.onclick=()=>quickSwitchMode('Both');
+    d.append(swBtn);
+    box.append(d);
+    return;
+  }
+
   const{data:raw,error}=await sb.rpc('get_people',{p_mode:mode,p_q:$('q').value.trim()||null});
   const data=(raw||[]).filter(p=>!blocked.has(p.id));
   if(error)return toast('Could not load: '+error.message);
   if(!data.length)return empty('No people found yet. Invite friends to join Milo.');
+
   data.forEach(p=>{
-    const c=el('article','pc glass');c.append(el('h3','',p.name));
-    c.append(el('small','',(p.username?'@'+p.username+' · ':'')+p.city+(p.same_city?' · same city':'')));
+    const c=el('article','pc glass');
+    const head=el('div','pc-header');
+    head.append(createAvatar(p.name,'md'));
+    const titles=el('div','pc-titles');
+    titles.append(el('h3','',p.name));
+    const metaText=(p.username?'@'+p.username+' · ':'')+(p.age?p.age+' yrs · ':'')+p.city+(p.same_city?' · 📍 same city':'');
+    titles.append(el('small','',metaText));
+    head.append(titles);
+    c.append(head);
+
+    if(p.bio){
+      const bioEl=el('div','pc-bio',p.bio);
+      c.append(bioEl);
+    }
+
     c.append(el('div','m',p.shared_count?p.shared_count+(p.shared_count===1?' hobby':' hobbies')+' in common':'No hobbies in common yet'));
     const g=el('div','tg');
     p.shared_hobbies.forEach(h=>g.append(el('span','t hit',h)));
@@ -489,14 +741,14 @@ function ckOk(){try{localStorage.setItem('milo_ck','1')}catch(e){}$('ck').hidden
 async function refresh(){
   if(!ok)return;
   const{data:{session}}=await sb.auth.getSession(),on=!!session;
-  ['loginBtn','joinBtn'].forEach(i=>$(i).hidden=on);
+  ['loginBtn','joinBtn','mLoginBtn','mJoinBtn'].forEach(i=>{if($(i))$(i).hidden=on});
   myId=on?session.user.id:null;
-  ['logoutBtn','profBtn','inboxBtn'].forEach(i=>$(i).hidden=!on);
+  ['logoutBtn','profBtn','inboxBtn','mLogoutBtn','mProfBtn','mInboxBtn'].forEach(i=>{if($(i))$(i).hidden=!on});
   $('userBox').hidden=!on;
 
   if(!on){me=null;$('people').hidden=true;refUI();return}
 
-  const{data}=await sb.from('profiles').select('name,city,username,looking_for,hobbies,vibes,date_of_birth,gender,is_banned').eq('id',session.user.id).maybeSingle();
+  const{data}=await sb.from('profiles').select('name,city,username,looking_for,hobbies,vibes,date_of_birth,gender,is_banned,bio').eq('id',session.user.id).maybeSingle();
   if(data){
     if(data.is_banned){
       toast('Your account has been suspended for violating safety guidelines.');
@@ -511,7 +763,14 @@ async function refresh(){
     }
   }
   me=data;
-  $('userBox').textContent=data?data.name:session.user.email;
+  if($('userBox')){
+    $('userBox').replaceChildren();
+    if(data){
+      $('userBox').append(createAvatar(data.name,'sm'),document.createTextNode(' '+(data.name||session.user.email)));
+    }else{
+      $('userBox').textContent=session.user.email;
+    }
+  }
   if(data){$('people').hidden=false;setTabs();load()}
 }
 

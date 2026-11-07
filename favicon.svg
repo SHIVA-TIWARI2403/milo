@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="miloGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b6cff"/>
+      <stop offset="50%" stop-color="#b79cff"/>
+      <stop offset="100%" stop-color="#ff8a5c"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#ff8a5c" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <!-- Background Squircle -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#miloGrad)" filter="url(#glow)"/>
+  <rect x="5" y="5" width="54" height="54" rx="15" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+  <!-- Stylized "m" with connection dots -->
+  <path d="M19 43V28a3 3 0 0 1 6 0v15M25 28a7 7 0 0 1 14 0v15M39 28a7 7 0 0 1 14 0v15" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Friendly connection heart / spark on top right -->
+  <circle cx="48" cy="18" r="4" fill="#62e6bd"/>
+</svg>
