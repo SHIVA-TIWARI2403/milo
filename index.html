@@ -13,7 +13,7 @@
 <!-- This site is hosted on Netlify. Anyone can build and deploy a site
      like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=a0a23bb5-ab09-420b-943f-d11014dd0197
      Netlify hosting facts for this site: static/SSR served via Netlify Edge. --><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://challenges.cloudflare.com https://accounts.google.com https://apis.google.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.googleusercontent.com https://lh3.googleusercontent.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://challenges.cloudflare.com https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; base-uri 'self'; form-action 'self' https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://challenges.cloudflare.com https://accounts.google.com https://apis.google.com https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://*.googleusercontent.com https://lh3.googleusercontent.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://*.supabase.co wss://*.supabase.co https://challenges.cloudflare.com https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-src https://challenges.cloudflare.com https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; base-uri 'self'; form-action 'self' https://accounts.google.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; worker-src 'self'; manifest-src 'self'">
 <title>Milo — Meet people who like what you like</title>
 <meta name="description" content="Milo helps adults 18+ meet people who share their hobbies. Choose Friends or Dating mode, send requests and chat safely. Free to join.">
 <meta name="google-site-verification" content="Ew0HdffpLq7fEDpLZuEfhThRLEuFWNj_Yr4Jw-E7I7E" />
@@ -22,16 +22,26 @@
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="alternate icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/favicon.svg">
+<link rel="manifest" href="/manifest.json">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Milo">
 <link rel="canonical" href="https://milosathi.netlify.app/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Milo">
 <meta property="og:title" content="Milo — Meet people who like what you like">
-<meta property="og:description" content="Pick your hobbies, choose Friends or Dating mode, and meet adults who share them. Free, 18+ only.">
+<meta property="og:description" content="Pick your hobbies, choose Friends or Dating mode, and meet adults who share them. Free, strictly 18+ only.">
 <meta property="og:url" content="https://milosathi.netlify.app/">
 <meta property="og:locale" content="en_IN">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://milosathi.netlify.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="Milo — Meet people who like what you like">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Milo — Meet people who like what you like">
 <meta name="twitter:description" content="Meet adults 18+ who share your hobbies. Friends or Dating mode. Free.">
+<meta name="twitter:image" content="https://milosathi.netlify.app/og-image.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Milo","url":"https://milosathi.netlify.app/","description":"A free website where adults 18+ meet people who share their hobbies.","inLanguage":"en-IN"},{"@type":"Organization","name":"Milo","url":"https://milosathi.netlify.app/","founder":{"@type":"Person","name":"Shiva Tiwari"},"address":{"@type":"PostalAddress","addressLocality":"Ayodhya","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","email":"tiwarisatendrapratap@gmail.com","contactType":"customer support"}}]}</script>
 <style>
 :root{--display:'Segoe UI',system-ui,sans-serif;--body:'Segoe UI',system-ui,sans-serif;--ink:#f6f2ff;--mut:#cfc8e4;--em:#ff8a5c;--or:#b79cff;--mint:#62e6bd}
@@ -50,6 +60,8 @@ button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;bo
 .btn:hover{background:rgba(255,255,255,.16)}
 .btn.main{background:var(--em);border-color:var(--em);color:#1a0e08}
 .btn.main:hover{background:#ffa07a}
+.install-btn{background:rgba(98,230,189,.15);border:1px solid var(--mint);color:var(--mint);padding:8px 14px;font-size:13px}
+.install-btn:hover{background:rgba(98,230,189,.25)}
 .menu-btn{display:none;padding:8px 14px;font-size:18px;line-height:1}
 .mobile-drawer{position:fixed;top:72px;left:12px;right:12px;z-index:35;padding:16px;display:flex;flex-direction:column;gap:10px;border-radius:20px;max-width:1100px;margin:auto}
 .mobile-drawer a{text-decoration:none;font-weight:600;padding:10px 14px;border-radius:12px;transition:background .15s}
@@ -57,6 +69,8 @@ button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;bo
 .m-auth-links{display:flex;flex-direction:column;gap:8px;padding-top:10px;border-top:1px solid rgba(255,255,255,.15)}
 select{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 10px}option{color:#111}
 html{scroll-behavior:smooth;scroll-padding-top:92px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.incomplete-banner{margin:12px auto;max-width:1100px;width:calc(100% - 24px);padding:12px 18px;border-radius:18px;border:1px solid rgba(255,138,92,.5);background:rgba(255,138,92,.15);position:sticky;top:74px;z-index:25}
+.incomplete-content{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px;color:var(--ink)}
 .hero{padding:96px 44px 80px;margin:28px 0;min-height:78vh;display:flex;flex-direction:column;justify-content:center}
 .hero h1{font:800 clamp(38px,6vw,72px)/1 var(--display);letter-spacing:-.04em;margin:0 0 18px;max-width:12em}
 .hero p{color:var(--mut);font-size:18px;max-width:34em;margin:0 0 30px}
@@ -65,11 +79,16 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}@media(prefers-reduced-motio
 .mode:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.4)}
 .mode b{font:800 28px var(--display);letter-spacing:-.02em}.mode span{color:var(--mut)}
 #people{padding:28px;margin:28px 0}
-.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:18px}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
 .tabs{display:flex;gap:6px;background:rgba(0,0,0,.25);padding:5px;border-radius:999px}
 .tabs button{background:none;padding:9px 20px;border-radius:999px;font-weight:700;color:var(--mut)}
 .tabs button.on{background:var(--ink);color:#1a1030}
 #q{flex:1;min-width:200px;padding:12px 18px;border-radius:999px;border:1px solid rgba(255,255,255,.2);background:rgba(0,0,0,.25)}
+.circles-row{display:flex;align-items:center;gap:10px;margin-bottom:16px;overflow-x:auto;padding-bottom:6px}
+.circles-label{font-size:13px;font-weight:700;color:var(--mut);white-space:nowrap}
+.circles-scroll{display:flex;gap:8px;flex-wrap:wrap}
+.circle-chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:var(--ink);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;transition:.15s ease}
+.circle-chip:hover,.circle-chip.active{background:var(--em);border-color:var(--em);color:#1a0e08}
 #hint{color:var(--mut);font-size:14px;margin:0 0 14px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
 .pc{padding:20px;display:flex;flex-direction:column;gap:10px;border-radius:20px}
@@ -128,7 +147,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 #toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:var(--ink);color:#15111d;padding:12px 20px;border-radius:14px;z-index:50;transition:.25s;font-weight:600;max-width:90vw}#toast.show{opacity:1;transform:translate(-50%,0)}
 @media(max-width:760px){
   .menu-btn{display:inline-block}
-  .nav nav,#userBox,#fontSel{display:none}
+  .nav nav,#userBox,#fontSel,#installAppBtn{display:none}
   .hero{padding:34px 22px}
   .modes{grid-template-columns:1fr}
   .split{grid-template-columns:1fr}.sec{margin:80px 0}
@@ -141,6 +160,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <nav><a href="#people" onclick="showPeople('Friends');return false">Friends</a><a href="#people" onclick="showPeople('Dating');return false">Dating</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
 <div class="right">
   <select id="fontSel" aria-label="Choose font" onchange="setFont(this.value)"></select>
+  <button id="installAppBtn" class="btn install-btn" style="display:none" onclick="installPWA()" title="Install Milo App">📲 Install App</button>
   <span id="userBox" hidden></span>
   <button id="inboxBtn" class="btn" hidden onclick="openInbox()">Chats</button>
   <button id="profBtn" class="btn" hidden onclick="openProf()">My profile</button>
@@ -149,6 +169,14 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
   <button id="joinBtn" class="btn main" onclick="openAuth('signup')">Join</button>
   <button id="menuBtn" class="btn menu-btn" aria-label="Toggle navigation menu" onclick="toggleMenu()">☰</button>
 </div></header>
+
+<!-- PROFILE INCOMPLETE REMINDER BANNER -->
+<div id="incompleteBanner" class="incomplete-banner glass" hidden>
+  <div class="incomplete-content">
+    <span>⚠️ <b>Profile incomplete:</b> Add your Date of Birth &amp; City so others can discover and match with you!</span>
+    <button class="btn main" style="padding:6px 16px;font-size:13px" onclick="if(me)openOb(me,null)">Complete Setup</button>
+  </div>
+</div>
 
 <!-- MOBILE NAVIGATION DRAWER -->
 <div id="mobileDrawer" class="mobile-drawer glass" hidden>
@@ -159,6 +187,7 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
   <a href="#safety" onclick="closeMenu()">🛡️ Stay Safe</a>
   <a href="#faq" onclick="closeMenu()">❓ FAQ</a>
   <div id="mAuthLinks" class="m-auth-links">
+    <button id="mInstallBtn" class="btn install-btn" style="display:none" onclick="closeMenu();installPWA()">📲 Install Milo App</button>
     <button id="mInboxBtn" class="btn" hidden onclick="closeMenu();openInbox()">💬 Chats</button>
     <button id="mProfBtn" class="btn" hidden onclick="closeMenu();openProf()">👤 My Profile</button>
     <button id="mLogoutBtn" class="btn" hidden onclick="closeMenu();sb.auth.signOut().then(()=>toast('Logged out.'))">Log out</button>
@@ -213,8 +242,28 @@ details p{margin:0 0 16px;color:var(--mut)}.copy{margin-top:30px;color:var(--mut
 <section class="sec"><div class="glass band"><h2>Ready to meet people who get you?</h2><button class="btn main" style="padding:14px 28px;font-size:17px" onclick="me?openProf():openAuth('signup')">Create your profile</button></div></section>
 
 <section id="people" class="glass" hidden>
-<div class="bar"><div class="tabs"><button id="tabF" onclick="showPeople('Friends')">Friends</button><button id="tabD" onclick="showPeople('Dating')">Dating</button></div>
-<input id="q" type="search" placeholder="Search by name or username" aria-label="Search people" oninput="clearTimeout(st);st=setTimeout(load,300)"></div>
+<div class="bar">
+  <div class="tabs">
+    <button id="tabF" onclick="showPeople('Friends')">Friends</button>
+    <button id="tabD" onclick="showPeople('Dating')">Dating</button>
+  </div>
+  <input id="q" type="search" placeholder="Search by name, hobby or city" aria-label="Search people" oninput="clearTimeout(st);st=setTimeout(load,300)">
+</div>
+
+<!-- POPULAR CIRCLES / HOBBY HUBS -->
+<div class="circles-row">
+  <span class="circles-label">Popular Circles:</span>
+  <div class="circles-scroll">
+    <button class="circle-chip" onclick="filterCircle('Cricket')">🏏 Cricket</button>
+    <button class="circle-chip" onclick="filterCircle('Chai & street food')">☕ Chai &amp; Food</button>
+    <button class="circle-chip" onclick="filterCircle('Coding')">💻 Tech &amp; Code</button>
+    <button class="circle-chip" onclick="filterCircle('Trekking')">✈️ Travel &amp; Trek</button>
+    <button class="circle-chip" onclick="filterCircle('Gaming')">🎮 Gaming</button>
+    <button class="circle-chip" onclick="filterCircle('Music')">🎵 Music</button>
+    <button class="circle-chip" onclick="filterCircle('')">🔄 All</button>
+  </div>
+</div>
+
 <p id="hint" hidden>Add hobbies and a username in My profile for better suggestions.</p>
 <div id="cards" class="cards"></div></section></main>
 
@@ -351,6 +400,42 @@ function closeMenu(){
   if($('menuBtn'))$('menuBtn').setAttribute('aria-expanded','false');
 }
 
+// POPULAR CIRCLES FILTER
+function filterCircle(hobby){
+  $('q').value=hobby;
+  document.querySelectorAll('.circle-chip').forEach(c=>c.classList.toggle('active',c.textContent.includes(hobby)&&hobby!==''));
+  load();
+}
+
+// PWA INSTALLATION & SERVICE WORKER
+let deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',e=>{
+  e.preventDefault();
+  deferredPrompt=e;
+  if($('installAppBtn'))$('installAppBtn').style.display='inline-flex';
+  if($('mInstallBtn'))$('mInstallBtn').style.display='block';
+});
+window.addEventListener('appinstalled',()=>{
+  toast('Milo installed successfully!');
+  deferredPrompt=null;
+  if($('installAppBtn'))$('installAppBtn').style.display='none';
+  if($('mInstallBtn'))$('mInstallBtn').style.display='none';
+});
+async function installPWA(){
+  if(!deferredPrompt)return toast('To install: tap Share or Browser Menu → "Add to Home Screen"');
+  deferredPrompt.prompt();
+  const{outcome}=await deferredPrompt.userChoice;
+  if(outcome==='accepted')toast('Installing Milo...');
+  deferredPrompt=null;
+  if($('installAppBtn'))$('installAppBtn').style.display='none';
+  if($('mInstallBtn'))$('mInstallBtn').style.display='none';
+}
+if('serviceWorker' in navigator){
+  window.addEventListener('load',()=>{
+    navigator.serviceWorker.register('/sw.js').catch(err=>console.log('SW registration error:',err));
+  });
+}
+
 const AM={login:{t:'Log in',s:'Welcome back.',f:['fEmail','fPass'],b:'Log in'},signup:{t:'Join Milo',s:'Create your account. Adults 18+ only.',f:['fEmail','fPass','fPass2','profileFields','termsRow'],b:'Create account'},reset:{t:'Reset password',s:'We will email you a reset link.',f:['fEmail'],b:'Send reset link'},newpass:{t:'Set a new password',s:'Choose a new password.',f:['fPass','fPass2'],b:'Save password'}};
 const AF=['fEmail','fPass','fPass2','profileFields','termsRow'],PI=['name','dob','city','looking'];
 
@@ -407,6 +492,7 @@ async function submitOb(e){
     });
     if(error)return toast('Could not save: '+error.message);
     $('obBg').classList.remove('show');
+    $('incompleteBanner').hidden=true;
     toast('Profile completed! Welcome to Milo.');
     refresh();
   }catch(x){toast('Error: '+x.message)}finally{$('obBtn').disabled=false}
@@ -704,7 +790,7 @@ async function load(){
   const{data:raw,error}=await sb.rpc('get_people',{p_mode:mode,p_q:$('q').value.trim()||null});
   const data=(raw||[]).filter(p=>!blocked.has(p.id));
   if(error)return toast('Could not load: '+error.message);
-  if(!data.length)return empty('No people found yet. Invite friends to join Milo.');
+  if(!data.length)return empty('No people found matching this search. Try a different hobby or invite friends to join Milo.');
 
   data.forEach(p=>{
     const c=el('article','pc glass');
@@ -746,7 +832,13 @@ async function refresh(){
   ['logoutBtn','profBtn','inboxBtn','mLogoutBtn','mProfBtn','mInboxBtn'].forEach(i=>{if($(i))$(i).hidden=!on});
   $('userBox').hidden=!on;
 
-  if(!on){me=null;$('people').hidden=true;refUI();return}
+  if(!on){
+    me=null;
+    $('people').hidden=true;
+    if($('incompleteBanner'))$('incompleteBanner').hidden=true;
+    refUI();
+    return;
+  }
 
   const{data}=await sb.from('profiles').select('name,city,username,looking_for,hobbies,vibes,date_of_birth,gender,is_banned,bio').eq('id',session.user.id).maybeSingle();
   if(data){
@@ -758,10 +850,12 @@ async function refresh(){
     if(!data.date_of_birth||!data.city||!data.looking_for){
       me=data;
       $('userBox').textContent=data.name||session.user.email;
+      if($('incompleteBanner'))$('incompleteBanner').hidden=false;
       openOb(data,session.user);
       return;
     }
   }
+  if($('incompleteBanner'))$('incompleteBanner').hidden=true;
   me=data;
   if($('userBox')){
     $('userBox').replaceChildren();

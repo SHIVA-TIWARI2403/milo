@@ -2,6 +2,7 @@
 
 <p align="center">
   <a href="https://milosathi.netlify.app"><img src="https://img.shields.io/badge/Live_Demo-milosathi.netlify.app-8A2BE2?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo"></a>
+  <img src="https://img.shields.io/badge/PWA-Installable_App-FF6B6B?style=for-the-badge&logo=pwa" alt="PWA Ready">
   <img src="https://img.shields.io/badge/Security-A%2B_Rating-00C853?style=for-the-badge&logo=shield" alt="Security A+">
   <img src="https://img.shields.io/badge/Auth-Google_OAuth_2.0-4285F4?style=for-the-badge&logo=google" alt="Google OAuth">
   <img src="https://img.shields.io/badge/Database-Supabase_PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase" alt="Supabase">
@@ -21,6 +22,8 @@
 ## 🚀 Key Features
 
 * 🎯 **Hobby & Vibe Matching:** Connect over shared passions (Cricket, Coding, Travel, Music, Books, Gaming, Chai & Street food, and more).
+* 📲 **Progressive Web App (PWA):** Install Milo directly on your mobile home screen with offline caching.
+* 🖼️ **Rich WhatsApp & Social Previews:** High-resolution OpenGraph banners for seamless link sharing.
 * 🎨 **Dynamic Avatars & Visual Identity:** Sleek deterministic gradient avatars with initials on cards, inbox, and active chats.
 * 🔄 **Dual Connection Modes:** Seamlessly switch between **Friends** mode, **Dating** mode, or **Both** (includes 1-click mode switching).
 * 💬 **Enhanced Real-time Messaging:** Fast bidirectional chat with formatted timestamps, empty-state icebreakers, unread request counter badges, and instant block & report controls.
@@ -39,7 +42,7 @@
 
 | Layer | Technologies |
 | :--- | :--- |
-| **Frontend** | Vanilla JavaScript (ES6+), Glassmorphic CSS3, Semantic HTML5 |
+| **Frontend** | Vanilla JavaScript (ES6+), Glassmorphic CSS3, Semantic HTML5, PWA Service Worker |
 | **Backend & Database** | [Supabase](https://supabase.com) (PostgreSQL 17, Row Level Security, Realtime WebSockets) |
 | **Authentication** | Google Cloud OAuth 2.0 + Supabase GoTrue Auth |
 | **Hosting & CDN** | [Netlify](https://www.netlify.com) Edge Network |
