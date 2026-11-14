@@ -1,5 +1,5 @@
 // Milo Service Worker for PWA installability & offline shell caching
-const CACHE_NAME = 'milo-v1.2.1';
+const CACHE_NAME = 'milo-v1.4.0';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -10,7 +10,14 @@ const ASSETS_TO_CACHE = [
   '/favicon.ico',
   '/icon-192.png',
   '/icon-512.png',
-  '/og-image.png'
+  '/og-image.png',
+  '/css/style.css',
+  '/js/config.js',
+  '/js/avatar.js',
+  '/js/auth.js',
+  '/js/chat.js',
+  '/js/pwa.js',
+  '/js/app.js'
 ];
 
 self.addEventListener('install', event => {
