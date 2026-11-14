@@ -7,6 +7,9 @@
 *backup*
 *.bak
 
+# Netlify local files
+.netlify/
+
 # OS generated files
 Thumbs.db
 Desktop.ini
