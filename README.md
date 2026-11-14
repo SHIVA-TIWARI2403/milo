@@ -3,6 +3,7 @@
 <p align="center">
   <a href="https://milosathi.netlify.app"><img src="https://img.shields.io/badge/Live_Demo-milosathi.netlify.app-8A2BE2?style=for-the-badge&logo=netlify&logoColor=white" alt="Live Demo"></a>
   <img src="https://img.shields.io/badge/PWA-Installable_App-FF6B6B?style=for-the-badge&logo=pwa" alt="PWA Ready">
+  <img src="https://img.shields.io/badge/Architecture-Modular_ES6-blueviolet?style=for-the-badge" alt="Modular Architecture">
   <img src="https://img.shields.io/badge/Security-A%2B_Rating-00C853?style=for-the-badge&logo=shield" alt="Security A+">
   <img src="https://img.shields.io/badge/Auth-Google_OAuth_2.0-4285F4?style=for-the-badge&logo=google" alt="Google OAuth">
   <img src="https://img.shields.io/badge/Database-Supabase_PostgreSQL-3ECF8E?style=for-the-badge&logo=supabase" alt="Supabase">
@@ -16,6 +17,36 @@
 **Milo** is a modern, privacy-first social and friendship web application built exclusively for adults (**18+**). Unlike traditional dating apps driven solely by superficial swiping, Milo matches people based on **shared hobbies, vibes, and genuine interests** — whether you're looking for activity partners, friends, or dating.
 
 🚀 **Explore Live:** [https://milosathi.netlify.app](https://milosathi.netlify.app)
+
+---
+
+## 📁 Modular Project Structure
+
+```text
+milo/
+├── index.html            # Ultra-clean semantic HTML5 layout & modal templates
+├── legal.html            # Comprehensive legal policies (Terms, Privacy, Safety, Cookies)
+├── sw.js                 # PWA Service Worker with offline shell caching (v1.4.0)
+├── manifest.json         # PWA Manifest specification for standalone installation
+├── _headers              # Netlify enterprise security headers & strict CSP
+├── _redirects            # SPA fallback and clean routing
+├── favicon.svg           # Scalable vector brand icon
+├── favicon.ico           # Legacy multi-resolution favicon
+├── icon-192.png          # High-DPI Android/PWA app icon
+├── icon-512.png          # High-res PWA splash & launcher icon
+├── og-image.png          # Rich 1200x630 social preview card
+├── css/
+│   └── style.css         # Modular glassmorphic styles, CSS variables, & responsive breakpoints
+├── js/
+│   ├── config.js         # Supabase connection, global state, master hobbies, and font engine
+│   ├── avatar.js         # Deterministic gradient avatar generator with initials
+│   ├── auth.js           # Google OAuth, onboarding modals, credentials, & profile lifecycle
+│   ├── chat.js           # Real-time WebSocket chat, requests, timestamps, bots, & safety
+│   ├── pwa.js            # PWA install prompt, share invites, feedback, & cookie banner
+│   └── app.js            # App lifecycle, mobile drawer, discovery feed, & matching algorithms
+├── CHANGELOG.md          # Version history & release notes
+└── README.md             # Project documentation
+```
 
 ---
 
@@ -42,7 +73,7 @@
 
 | Layer | Technologies |
 | :--- | :--- |
-| **Frontend** | Vanilla JavaScript (ES6+), Glassmorphic CSS3, Semantic HTML5, PWA Service Worker |
+| **Frontend** | Modular Vanilla JavaScript (ES6+), Glassmorphic CSS3, Semantic HTML5, PWA Service Worker |
 | **Backend & Database** | [Supabase](https://supabase.com) (PostgreSQL 17, Row Level Security, Realtime WebSockets) |
 | **Authentication** | Google Cloud OAuth 2.0 + Supabase GoTrue Auth |
 | **Hosting & CDN** | [Netlify](https://www.netlify.com) Edge Network |
@@ -61,32 +92,9 @@ Milo implements rigorous defensive security practices:
 
 ---
 
-## 💻 Local Development
+## 👨‍💻 Author & Founder
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/SHIVA-TIWARI2403/milo.git
-   cd milo
-   ```
-
-2. **Run locally:**
-   Simply open `index.html` in any modern web browser or serve via Live Server:
-   ```bash
-   npx serve .
-   ```
-
----
-
-## 👨‍💻 Creator & Founder
-
-Crafted with ❤️ by **Shiva Tiwari** (Ayodhya, India).
-
-* 🌐 **Live Website:** [milosathi.netlify.app](https://milosathi.netlify.app)
-* 🐙 **GitHub:** [@SHIVA-TIWARI2403](https://github.com/SHIVA-TIWARI2403)
-* 📧 **Contact:** [tiwarisatendrapratap@gmail.com](mailto:tiwarisatendrapratap@gmail.com)
-
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
+* **Founder:** Shiva Tiwari ([@SHIVA-TIWARI2403](https://github.com/SHIVA-TIWARI2403))
+* **Location:** Ayodhya, India
+* **Contact:** tiwarisatendrapratap@gmail.com
+* **Project Repo:** [github.com/SHIVA-TIWARI2403/milo](https://github.com/SHIVA-TIWARI2403/milo)
