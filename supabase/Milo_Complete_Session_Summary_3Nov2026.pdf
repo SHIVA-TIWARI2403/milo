@@ -1,0 +1,278 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 4 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 8441 >>
+stream
+q 0.5 0.5 0.5 rg BT /F1 8 Tf 45.0 813.89 Td (Milo: Complete Session, Access & Security Summary | 3 November 2026) Tj ET Q
+q 0.8 0.8 0.8 RG 0.5 w 45.0 809.89 m 550.28 809.89 l S Q
+q 0.1 0.1 0.15 rg BT /F2 20 Tf 45.0 796.89 Td (Milo: Complete Session & Access Summary) Tj ET Q
+q 0.4 0.4 0.45 rg BT /F1 10 Tf 45.0 770.89 Td (Session Date: 3 November 2026 | Detailed Work, Access Granted, Security & Files Report) Tj ET Q
+q 0.96 0.96 0.99 rg 0.8 0.8 0.92 RG 1 w 45.0 654.89 505.28 108 re B Q
+q 0.1 0.2 0.5 rg BT /F2 10 Tf 57.0 750.89 Td (PROJECT OVERVIEW & CREDENTIALS) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 735.89 Td (Website Name: Milo \(Friends + Dating for Adults 18+ based on Hobbies\)) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 722.89 Td (Owner & Operator: Shiva Tiwari, Ayodhya, Uttar Pradesh, India) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 709.89 Td (Official Contact: amshivatiwari444@gmail.com | WhatsApp: +91 8960056517) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 696.89 Td (Live Production URL: https://milosathi.netlify.app) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 683.89 Td (Database: Supabase \(Project ID: aljlnisvrveuwlishgyv, Region: EU Paris\)) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 670.89 Td (Hosting: Netlify \(Project ID: a0a23bb5-ab09-420b-943f-d11014dd0197\)) Tj ET Q
+q 0.1 0.1 0.25 rg BT /F2 13 Tf 45.0 636.89 Td (1. All Access & Permissions Granted During Today's Session) Tj ET Q
+q 0.85 0.85 0.9 RG 1 w 45.0 632.89 m 550.28 632.89 l S Q
+q 0.15 0.15 0.15 rg BT /F1 9.5 Tf 45.0 618.89 Td (During this pair-programming session, the user granted specific system, cloud, and database) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.5 Tf 45.0 606.0649999999999 Td (permissions to Antigravity to perform development and security hardening tasks:) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 589.2399999999999 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 589.2399999999999 Td (Supabase Database MCP Access: Connected to Supabase project 'aljlnisvrveuwlishgyv'. Antigravity was) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 577.0899999999999 Td (granted permission to execute DDL migrations \(Part 8\), modify profiles table constraints, create) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 564.9399999999999 Td (security definer stored procedures, and set admin status.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 549.79 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 549.79 Td (Netlify Cloud MCP Access: Connected to Netlify account 'amshivatiwari444@gmail.com' \(Team ID:) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 537.64 Td (6ac720aea9a5eb1906993e2c\) managing site 'milosathi'. Read site status, deploy endpoints, and access) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 525.49 Td (configurations.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 510.34000000000003 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 510.34000000000003 Td (Google Drive Plugin Access: Connected as 'amshivatiwari444@gmail.com' with OAuth2 scopes for Google) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 498.19000000000005 Td (Drive management.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 483.0400000000001 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 483.0400000000001 Td (GitHub CLI \(gh\) Installation: Installed GitHub CLI v2.103.3 into local user AppData \(winget\) to manage) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 470.8900000000001 Td (code versioning and repositories without requiring Windows admin elevation.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 455.7400000000001 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 455.7400000000001 Td (Windows Registry Default Browser Configuration: Updated current user protocol handlers) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 443.59000000000015 Td (\(HKCU\\Software\\Classes\\https and http\) to Google Chrome so authentication callbacks and web links open) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 431.44000000000017 Td (in Chrome instead of Microsoft Edge.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 416.2900000000002 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 416.2900000000002 Td (Filesystem Read/Write Access: Granted access to project directories 'DATING NETLIFY', 'DATING PROJECT',) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 404.1400000000002 Td (and 'Downloads' to inspect code, prepare deployments, and maintain database scripts.) Tj ET Q
+q 0.1 0.1 0.25 rg BT /F2 13 Tf 45.0 380.99000000000024 Td (2. All Tasks & Work Completed Today \(Step-by-Step\)) Tj ET Q
+q 0.85 0.85 0.9 RG 1 w 45.0 376.99000000000024 m 550.28 376.99000000000024 l S Q
+q 0.15 0.15 0.15 rg BT /F1 9.5 Tf 45.0 362.99000000000024 Td (The user requested full analysis, Google security implementation, database hardening, and automated) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.5 Tf 45.0 350.16500000000025 Td (deployment preparation. Here is everything that was done:) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F2 10.5 Tf 45.0 329.34000000000026 Td (A. Google Sign-In & OAuth Integration) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 314.34000000000026 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 314.34000000000026 Td (Official Google Button: Integrated Google 'G' branded 'Continue with Google' button into both Log in and) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 302.1900000000003 Td (Join modals in index.html.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 287.0400000000003 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 287.0400000000003 Td (OAuth Flow Handling: Implemented sb.auth.signInWithOAuth\(\) with redirect back to milosathi.netlify.app,) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 274.8900000000003 Td (ensuring cross-origin authentication is seamless.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 259.74000000000035 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 259.74000000000035 Td (Google Onboarding Modal: Created an automatic modal \(#obBg\) that intercepts new Google users. Because) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 247.59000000000034 Td (Google only provides name and email, Milo prompts for Date of Birth, City, and Mode) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 235.44000000000034 Td (\(Friends/Dating/Both\) before granting access.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 220.29000000000033 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 220.29000000000033 Td (Server-Side 18+ Verification: Wrote and deployed complete_oauth_profile\(\) PostgreSQL function that) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 208.14000000000033 Td (calculates age directly inside the database, preventing any client-side age bypass.) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F2 10.5 Tf 45.0 188.99000000000032 Td (B. Enterprise-Grade Security Headers \(_headers\)) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 173.99000000000032 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 173.99000000000032 Td (Strict-Transport-Security \(HSTS\): Enforces HTTPS encryption for 1 year \(max-age=31536000;) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 161.84000000000032 Td (includeSubDomains; preload\).) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 146.6900000000003 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 146.6900000000003 Td (Anti-Clickjacking \(X-Frame-Options: DENY\): Blocks any third-party website or attacker from embedding) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 134.5400000000003 Td (Milo inside an invisible iframe to steal user clicks or credentials.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 119.3900000000003 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 119.3900000000003 Td (MIME-Sniffing Defense \(X-Content-Type-Options: nosniff\): Prevents browsers from misinterpreting files as) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 107.2400000000003 Td (executable scripts.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 92.09000000000029 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 92.09000000000029 Td (Enhanced CSP Header: Permits only authorized Google OAuth endpoints \(accounts.google.com,) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 79.94000000000028 Td (apis.google.com\), Google user avatars \(*.googleusercontent.com\), Cloudflare Turnstile, and Supabase.) Tj ET Q
+q 0.8 0.8 0.8 RG 0.5 w 45.0 34 m 550.28 34 l S Q
+q 0.5 0.5 0.5 rg BT /F1 8 Tf 45.0 22 Td (Owner: Shiva Tiwari, Ayodhya | Live: https://milosathi.netlify.app | Confidential) Tj ET
+BT /F1 8 Tf 510.28 22 Td (Page 1) Tj ET Q
+
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 6 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 9730 >>
+stream
+q 0.5 0.5 0.5 rg BT /F1 8 Tf 45.0 813.89 Td (Milo: Complete Session, Access & Security Summary | 3 November 2026) Tj ET Q
+q 0.8 0.8 0.8 RG 0.5 w 45.0 809.89 m 550.28 809.89 l S Q
+q 0.1 0.1 0.25 rg BT /F2 13 Tf 45.0 788.89 Td (2. All Tasks & Work Completed Today \(Continued\)) Tj ET Q
+q 0.85 0.85 0.9 RG 1 w 45.0 784.89 m 550.28 784.89 l S Q
+q 0.15 0.15 0.2 rg BT /F2 10.5 Tf 45.0 766.89 Td (C. Supabase Part 8 Migration \(Live Database Hardening\)) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 751.89 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 751.89 Td (Executed Migration Live: Applied 'part8_google_security_admin' directly to Supabase production via the) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 739.74 Td (official Supabase MCP connector.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 724.59 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 724.59 Td (Nullable OAuth Handshake: Altered profiles columns \(date_of_birth, city, gender, looking_for\) to allow) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 712.44 Td (initial Google signups without database trigger crashes.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 697.2900000000001 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 697.2900000000001 Td (Trigger Update: Rewrote handle_new_user\(\) trigger to accept both Google OAuth signups and traditional) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 685.1400000000001 Td (email signups with 18+ verification.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 669.9900000000001 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 669.9900000000001 Td (Ban & Suspension System: Added is_banned column and updated get_people\(\), send_request\(\), and can_chat\(\)) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 657.8400000000001 Td (functions so suspended users are blocked from viewing profiles or sending messages.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 642.6900000000002 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 642.6900000000002 Td (Admin Elevation: Added is_admin column and promoted amshivatiwari444@gmail.com to administrator,) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 630.5400000000002 Td (enabling reports viewing and ban triggers.) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F2 10.5 Tf 45.0 611.3900000000002 Td (D. Bot Transparency & UI Enhancements) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 596.3900000000002 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 596.3900000000002 Td (Clear [BOT] Badges: Added visible 'BOT' indicator tags on Aarav and Anaya chat tabs and incoming message) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 584.2400000000002 Td (bubbles to ensure user transparency.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 569.0900000000003 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 569.0900000000003 Td (Hinglish Conversation Intelligence: Added natural Hinglish responses for icebreakers, cricket,) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 556.9400000000003 Td (chai/coffee, favorite movies, jokes, and safety rules.) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F2 10.5 Tf 45.0 537.7900000000003 Td (E. Netlify Routing & SPA Support \(_redirects\)) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 522.7900000000003 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 522.7900000000003 Td (Clean Route Handling: Created _redirects with rule '/* /index.html 200' to prevent 404 errors during) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 510.6400000000003 Td (Google OAuth redirection or page refreshes.) Tj ET Q
+q 0.1 0.1 0.25 rg BT /F2 13 Tf 45.0 487.49000000000035 Td (3. Full File Inventory & Changes Made) Tj ET Q
+q 0.85 0.85 0.9 RG 1 w 45.0 483.49000000000035 m 550.28 483.49000000000035 l S Q
+q 0.15 0.15 0.15 rg BT /F1 9.5 Tf 45.0 469.49000000000035 Td (Summary of all files touched, created, or relocated during today's session:) Tj ET Q
+q 0.92 0.93 0.96 rg 45.0 437.66500000000036 505 20 re f Q
+q 0.1 0.1 0.2 rg BT /F2 9 Tf 50.0 444.66500000000036 Td (File Name) Tj ET Q
+q 0.1 0.1 0.2 rg BT /F2 9 Tf 165.0 444.66500000000036 Td (Location / Folder) Tj ET Q
+q 0.1 0.1 0.2 rg BT /F2 9 Tf 290.0 444.66500000000036 Td (Action Taken) Tj ET Q
+q 0.1 0.1 0.2 rg BT /F2 9 Tf 465.0 444.66500000000036 Td (Current Status) Tj ET Q
+q 0.8 0.8 0.85 RG 0.5 w 45.0 437.66500000000036 m 550.0 437.66500000000036 l S Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 425.66500000000036 Td (index.html) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 425.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 425.66500000000036 Td (Updated with Google Auth & Onboarding) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 425.66500000000036 Td (51.3 KB \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 419.66500000000036 m 550.0 419.66500000000036 l S Q
+q 0.98 0.98 0.99 rg 45.0 401.66500000000036 505 18 re f Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 407.66500000000036 Td (legal.html) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 407.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 407.66500000000036 Td (Added Google OAuth Privacy terms) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 407.66500000000036 Td (4.9 KB \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 401.66500000000036 m 550.0 401.66500000000036 l S Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 389.66500000000036 Td (_headers) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 389.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 389.66500000000036 Td (Created Netlify security headers) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 389.66500000000036 Td (844 B \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 383.66500000000036 m 550.0 383.66500000000036 l S Q
+q 0.98 0.98 0.99 rg 45.0 365.66500000000036 505 18 re f Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 371.66500000000036 Td (_redirects) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 371.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 371.66500000000036 Td (Created Netlify SPA routing rules) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 371.66500000000036 Td (24 B \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 365.66500000000036 m 550.0 365.66500000000036 l S Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 353.66500000000036 Td (.gitignore) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 353.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 353.66500000000036 Td (Created Git secret & SQL block rules) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 353.66500000000036 Td (116 B \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 347.66500000000036 m 550.0 347.66500000000036 l S Q
+q 0.98 0.98 0.99 rg 45.0 329.66500000000036 505 18 re f Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 335.66500000000036 Td (README.md) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 335.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 335.66500000000036 Td (Created GitHub project documentation) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 335.66500000000036 Td (1.1 KB \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 329.66500000000036 m 550.0 329.66500000000036 l S Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 317.66500000000036 Td (robots.txt) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 317.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 317.66500000000036 Td (Verified search engine crawler rules) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 317.66500000000036 Td (75 B \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 311.66500000000036 m 550.0 311.66500000000036 l S Q
+q 0.98 0.98 0.99 rg 45.0 293.66500000000036 505 18 re f Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 299.66500000000036 Td (sitemap.xml) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 299.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 299.66500000000036 Td (Verified Google Search Console map) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 299.66500000000036 Td (288 B \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 293.66500000000036 m 550.0 293.66500000000036 l S Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 281.66500000000036 Td (llms.txt) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 281.66500000000036 Td (DATING NETLIFY) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 281.66500000000036 Td (Verified AI summary crawler file) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 281.66500000000036 Td (1.4 KB \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 275.66500000000036 m 550.0 275.66500000000036 l S Q
+q 0.98 0.98 0.99 rg 45.0 257.66500000000036 505 18 re f Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 263.66500000000036 Td (supabase_part8_google_security.sql) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 263.66500000000036 Td (DATING PROJECT & Downloads) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 263.66500000000036 Td (Executed in DB; MOVED OUT of Netlify folder) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 263.66500000000036 Td (9.1 KB \(Private\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 257.66500000000036 m 550.0 257.66500000000036 l S Q
+q 0.15 0.15 0.2 rg BT /F2 8.5 Tf 50.0 245.66500000000036 Td (index.backup.html) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 165.0 245.66500000000036 Td (Temporary) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 290.0 245.66500000000036 Td (Used for pre-edit backup; DELETED) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F1 8.5 Tf 465.0 245.66500000000036 Td (Deleted \(Clean\)) Tj ET Q
+q 0.88 0.88 0.9 RG 0.5 w 45.0 239.66500000000036 m 550.0 239.66500000000036 l S Q
+q 0.8 0.8 0.8 RG 0.5 w 45.0 34 m 550.28 34 l S Q
+q 0.5 0.5 0.5 rg BT /F1 8 Tf 45.0 22 Td (Owner: Shiva Tiwari, Ayodhya | Live: https://milosathi.netlify.app | Confidential) Tj ET
+BT /F1 8 Tf 510.28 22 Td (Page 2) Tj ET Q
+
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Contents 8 0 R /Resources << /Font << /F1 9 0 R /F2 10 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 5648 >>
+stream
+q 0.5 0.5 0.5 rg BT /F1 8 Tf 45.0 813.89 Td (Milo: Complete Session, Access & Security Summary | 3 November 2026) Tj ET Q
+q 0.8 0.8 0.8 RG 0.5 w 45.0 809.89 m 550.28 809.89 l S Q
+q 0.1 0.1 0.25 rg BT /F2 13 Tf 45.0 788.89 Td (4. Security Audit & Incident Prevention Report) Tj ET Q
+q 0.85 0.85 0.9 RG 1 w 45.0 784.89 m 550.28 784.89 l S Q
+q 0.15 0.15 0.15 rg BT /F1 9.5 Tf 45.0 770.89 Td (An essential part of today's session was catching and resolving a critical deployment risk:) Tj ET Q
+q 1.0 0.97 0.97 rg 0.9 0.4 0.4 RG 1 w 45.0 656.0649999999999 505.28 108 re B Q
+q 0.1 0.2 0.5 rg BT /F2 10 Tf 57.0 752.0649999999999 Td (CRITICAL SECURITY SAFEGUARD: SQL FILE REMOVAL FROM NETLIFY) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 737.0649999999999 Td (Issue Identified: The user correctly caught that placing 'supabase_part8_google_security.sql' in the) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 724.0649999999999 Td (DATING NETLIFY folder would cause Netlify to publish it as a public URL \(milosathi.netlify.app/*.sql\).) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 711.0649999999999 Td (Risk: Public access to internal schema definitions, column structures, and stored procedures.) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 698.0649999999999 Td (Immediate Action: Antigravity permanently deleted all .sql and .backup files from DATING NETLIFY.) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 685.0649999999999 Td (Safe Storage: The SQL file was moved exclusively to DATING PROJECT and Downloads.) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 672.0649999999999 Td (Protection Rule: A strict .gitignore was added to ensure *.sql files are never committed to GitHub.) Tj ET Q
+q 0.15 0.15 0.2 rg BT /F2 10.5 Tf 45.0 642.0649999999999 Td (Data Protection & Privacy Architecture) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 627.0649999999999 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 627.0649999999999 Td (Password & Credential Security: User passwords are encrypted via bcrypt/Argon2 by Supabase Auth. Neither) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 614.915 Td (Milo nor the operator can ever view user passwords.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 599.765 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 599.765 Td (Private Personal Data: Users' Date of Birth and Email are stored under Row Level Security and are NEVER) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 587.615 Td (exposed via get_people\(\) suggestions or search.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 572.465 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 572.465 Td (Keys Separation: Only the public anon key \(sb_publishable_...\) is embedded in frontend JavaScript. The) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 560.315 Td (service_role secret key remains private and unexposed.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 545.1650000000001 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 545.1650000000001 Td (Admin Hierarchy: Only accounts with is_admin = true can query abuse reports or trigger user suspensions.) Tj ET Q
+q 0.1 0.1 0.25 rg BT /F2 13 Tf 45.0 522.0150000000001 Td (5. Current Status & Next Action Steps for Shiva) Tj ET Q
+q 0.85 0.85 0.9 RG 1 w 45.0 518.0150000000001 m 550.28 518.0150000000001 l S Q
+q 0.15 0.15 0.15 rg BT /F1 9.5 Tf 45.0 504.0150000000001 Td (The Milo project is in a fully functional, hardened, and clean state. To complete the final steps:) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 487.1900000000001 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 487.1900000000001 Td (Step 1: Google Cloud OAuth Credentials \(3 mins\): Visit console.cloud.google.com -> Create Web OAuth) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 475.04000000000013 Td (Client ID. Set redirect URI to 'https://aljlnisvrveuwlishgyv.supabase.co/auth/v1/callback'. Enable) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 462.89000000000016 Td (Google in Supabase Auth -> Providers -> Google.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 447.7400000000002 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 447.7400000000002 Td (Step 2: Netlify Deployment \(10 secs\): Visit https://app.netlify.com/projects/milosathi/deploys and) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 435.5900000000002 Td (drag-and-drop the clean folder: 'C:\\Users\\SHIVA TIWARI\\OneDrive\\Desktop\\DATING NETLIFY'.) Tj ET Q
+q 0.85 0.4 0.2 rg BT /F2 9.0 Tf 45.0 420.4400000000002 Td (•) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 420.4400000000002 Td (Step 3: GitHub Repository Upload \(1 min\): Visit github.com/new -> create 'milo' repository -> click) Tj ET Q
+q 0.15 0.15 0.15 rg BT /F1 9.0 Tf 59.0 408.29000000000025 Td ('uploading an existing file' -> drag the files from DATING NETLIFY \(SQL files are already excluded\).) Tj ET Q
+q 0.96 0.96 0.99 rg 0.8 0.8 0.92 RG 1 w 45.0 337.14000000000027 505.28 66 re B Q
+q 0.1 0.2 0.5 rg BT /F2 10 Tf 57.0 391.14000000000027 Td (CONFIDENTIALITY & OPERATOR NOTICE) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 376.14000000000027 Td (This summary PDF document was generated automatically by Antigravity at the request of) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 363.14000000000027 Td (Shiva Tiwari on 3 November 2026. All permissions granted during this session were used solely) Tj ET Q
+q 0.2 0.2 0.25 rg BT /F1 9 Tf 57.0 350.14000000000027 Td (for the direct development, security configuration, and maintenance of the Milo web project.) Tj ET Q
+q 0.8 0.8 0.8 RG 0.5 w 45.0 34 m 550.28 34 l S Q
+q 0.5 0.5 0.5 rg BT /F1 8 Tf 45.0 22 Td (Owner: Shiva Tiwari, Ayodhya | Live: https://milosathi.netlify.app | Confidential) Tj ET
+BT /F1 8 Tf 510.28 22 Td (Page 3) Tj ET Q
+
+endstream
+endobj
+9 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+10 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000127 00000 n 
+0000000270 00000 n 
+0000008763 00000 n 
+0000008906 00000 n 
+0000018688 00000 n 
+0000018831 00000 n 
+0000024531 00000 n 
+0000024601 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+24677
+%%EOF
