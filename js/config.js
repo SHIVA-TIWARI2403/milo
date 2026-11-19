@@ -8,7 +8,18 @@
 const SUPABASE_URL = 'https://aljlnisvrveuwlishgyv.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_fHpR8DkYG6XGbnUs8djC0g_gyQn0Kwm';
 const ok = !SUPABASE_URL.startsWith('PASTE');
-const sb = ok && window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+
+function getSb() {
+  if (window.sb && typeof window.sb.from === 'function') return window.sb;
+  if (ok && typeof window.supabase !== 'undefined' && typeof window.supabase.createClient === 'function') {
+    window.sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    return window.sb;
+  }
+  return null;
+}
+
+let sb = getSb();
+window.sb = sb;
 
 // DOM Helpers
 const $ = id => document.getElementById(id);

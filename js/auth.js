@@ -61,6 +61,8 @@ const closeAuth = () => $('authBg').classList.remove('show');
 // Google 1-Click OAuth
 async function signInWithGoogle() {
   if (!ok) return toast('Pehle Supabase URL aur key paste karo.');
+  sb = getSb();
+  if (!sb) return toast('Connection error: Database client not ready. Please refresh.');
   try {
     const { error } = await sb.auth.signInWithOAuth({
       provider: 'google',
@@ -88,6 +90,8 @@ async function submitOb(e) {
   e.preventDefault();
   const dob = $('obDob').value;
   if (age(dob) < 18) return toast('Milo is for adults 18+ only.');
+  sb = getSb();
+  if (!sb) return toast('Connection error: Database client not ready. Please refresh.');
   $('obBtn').disabled = true;
   try {
     const { error } = await sb.rpc('complete_oauth_profile', {
@@ -113,6 +117,8 @@ async function submitOb(e) {
 async function submitAuth(e) {
   e.preventDefault();
   if (!ok) return toast('Pehle Supabase URL aur key paste karo.');
+  sb = getSb();
+  if (!sb) return toast('Connection error: Supabase client not loaded. Please refresh the page.');
   const email = $('email').value.trim();
   const pw = $('password').value;
 
@@ -223,6 +229,8 @@ function openProf() {
 const closeProf = () => $('profBg').classList.remove('show');
 
 async function saveProf() {
+  sb = getSb();
+  if (!sb) return toast('Connection error: Database client not ready. Please refresh.');
   const pk = id => [...$(id).querySelectorAll('input:checked')].map(i => i.value);
   const un = $('uname').value.trim().toLowerCase();
   if (un && !/^[a-z0-9_]{3,20}$/.test(un)) {
@@ -262,6 +270,8 @@ async function saveProf() {
 // Permanently Delete Account
 async function delAcc() {
   if (!confirm('Delete your account and profile permanently? This cannot be undone.')) return;
+  sb = getSb();
+  if (!sb) return toast('Connection error: Database client not ready. Please refresh.');
   const { error } = await sb.rpc('delete_my_account');
   if (error) return toast('Could not delete: ' + error.message);
   closeProf();

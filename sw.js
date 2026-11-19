@@ -1,5 +1,5 @@
 // Milo Service Worker for PWA installability & offline shell caching
-const CACHE_NAME = 'milo-v1.4.0';
+const CACHE_NAME = 'milo-v1.4.1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -12,6 +12,7 @@ const ASSETS_TO_CACHE = [
   '/icon-512.png',
   '/og-image.png',
   '/css/style.css',
+  '/js/supabase.js',
   '/js/config.js',
   '/js/avatar.js',
   '/js/auth.js',

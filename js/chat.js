@@ -6,6 +6,7 @@
 
 // Fetch active user connections and blocked status
 async function loadConns() {
+  sb = getSb();
   if (!sb) return;
   const [a, b] = await Promise.all([
     sb.rpc('get_connections'),

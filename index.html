@@ -45,7 +45,7 @@
 <meta name="twitter:image" content="https://milosathi.netlify.app/og-image.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Milo","url":"https://milosathi.netlify.app/","description":"A free website where adults 18+ meet people who share their hobbies.","inLanguage":"en-IN"},{"@type":"Organization","name":"Milo","url":"https://milosathi.netlify.app/","founder":{"@type":"Person","name":"Shiva Tiwari"},"address":{"@type":"PostalAddress","addressLocality":"Ayodhya","addressCountry":"IN"},"contactPoint":{"@type":"ContactPoint","email":"tiwarisatendrapratap@gmail.com","contactType":"customer support"}}]}</script>
 <link rel="stylesheet" href="/css/style.css">
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script></head>
+</head>
 <body>
 <header class="nav glass"><a class="brand" href="#">milo</a>
 <nav><a href="#people" onclick="showPeople('Friends');return false">Friends</a><a href="#people" onclick="showPeople('Dating');return false">Dating</a><a href="#how">How it works</a><a href="#faq">FAQ</a></nav>
@@ -231,6 +231,8 @@
 <div id="ck" class="glass" role="dialog" aria-label="Cookie notice" hidden><span>Milo uses only essential storage (login, font choice and invite code). No ads or tracking. <a href='/legal#cookies'>Cookies Policy</a></span><button class="btn main" onclick="ckOk()">OK</button></div>
 <div id="toast" role="status" aria-live="polite"></div>
 
+<script src="/js/supabase.js"></script>
+<script>if(!window.supabase){document.write('<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"><\/script>')}</script>
 <script src="/js/config.js"></script>
 <script src="/js/avatar.js"></script>
 <script src="/js/auth.js"></script>

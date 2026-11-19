@@ -88,7 +88,8 @@ document.addEventListener('keydown', e => {
 // DISCOVERY FEED & PEOPLE MATCHING
 // ==========================================
 async function load() {
-  if (!me) return;
+  sb = getSb();
+  if (!sb || !me) return;
   if (typeof loadConns === 'function') await loadConns();
   const box = $('cards');
   box.replaceChildren();
@@ -170,6 +171,8 @@ try {
 
 async function refresh() {
   if (!ok) return;
+  sb = getSb();
+  if (!sb) return;
   const { data: { session } } = await sb.auth.getSession();
   const on = !!session;
 
@@ -233,11 +236,14 @@ async function refresh() {
 if (typeof refUI === 'function') refUI();
 
 if (ok) {
-  sb.auth.onAuthStateChange(ev => {
-    if (ev === 'PASSWORD_RECOVERY' && typeof openAuth === 'function') {
-      openAuth('newpass');
-    }
-    refresh();
-  });
+  sb = getSb();
+  if (sb) {
+    sb.auth.onAuthStateChange(ev => {
+      if (ev === 'PASSWORD_RECOVERY' && typeof openAuth === 'function') {
+        openAuth('newpass');
+      }
+      refresh();
+    });
+  }
   refresh();
 }
