@@ -4,6 +4,20 @@ All notable changes, bug fixes, and feature releases for **Milo** (`milosathi.ne
 
 ---
 
+## [v1.4.1] — 2026-11-19
+
+### 🛡️ Supabase Client Resiliency & Auth Stability
+* **Self-Hosted Supabase Engine (`js/supabase.js`):**
+  * Self-hosted `@supabase/supabase-js` directly on Netlify Edge CDN to eliminate reliance on third-party CDNs (`cdn.jsdelivr.net`) which are prone to ISP routing blocks and adblocker interference.
+  * Added instant fallback to CDN if local bundle fails to parse.
+* **Dynamic Client Resolver (`getSb()`):**
+  * Replaced static `sb` client binding with a dynamic and resilient `getSb()` resolver across all auth, profile, and chat flows.
+  * Resolved the `Cannot read properties of null (reading 'auth')` runtime error permanently with friendly diagnostic toast notices.
+* **Service Worker Caching (`sw.js`):**
+  * Bumped cache version to `milo-v1.4.1` with full offline shell support for `/js/supabase.js`.
+
+---
+
 ## [v1.4.0] — 2026-11-14
 
 ### 🏗️ Codebase Modularization & Architecture Refactor
